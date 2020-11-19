@@ -1,14 +1,16 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy2 : MonoBehaviour
+public class enem : MonoBehaviour
 {
     public float moveSpeed = 5f;
 	public float rightLimit = 7f;
 	public float leftLimit = -7f;
+	
+	//public Animator enemy2Anim;
 
-	public bool shouldGoRight = false;
+	public bool shouldGoRight = true;
 
     Vector3 pos, localScale;
     // Start is called before the first frame update
@@ -22,10 +24,12 @@ public class Enemy2 : MonoBehaviour
     void Update()
     {
         CheckWhereToGo();
-        if (shouldGoRight)
-            MoveRight();
-        else
-            MoveLeft();
+        if (shouldGoRight){
+			//enemy2Anim.SetBool("L/R", true);
+            MoveRight();}
+        else{
+			//enemy2Anim.SetBool("L/R", false);
+            MoveLeft();}
     }
 	void CheckWhereToGo()
 	{
