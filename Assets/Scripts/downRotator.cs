@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -54,7 +54,7 @@ public class downRotator : MonoBehaviour
     {
         if (phase == 1){
             transform.Rotate(0f, 0f, speed);
-            Debug.Log(transform.rotation.z);
+            //Debug.Log(transform.rotation.z);
             if (transform.rotation.z >= rightRange)
             {
                 phase = 2;
@@ -64,7 +64,7 @@ public class downRotator : MonoBehaviour
         else if (phase == 2)
         {
             transform.Rotate(0f, 0f, -speed);
-            Debug.Log(transform.rotation.z);
+            //Debug.Log(transform.rotation.z);
             if (transform.rotation.z <= 0.02)
             {
                 phase = 3;
@@ -73,7 +73,7 @@ public class downRotator : MonoBehaviour
         else if (phase == 3)
         {
             transform.Rotate(0f, 0f, -speed);
-            Debug.Log(transform.rotation.z);
+            //Debug.Log(transform.rotation.z);
             if (transform.rotation.z <= leftRange)
             {
                 phase = 4;
@@ -82,7 +82,7 @@ public class downRotator : MonoBehaviour
         else if (phase == 4)
         {
             transform.Rotate(0f, 0f, speed);
-            Debug.Log(transform.rotation.z);
+            //Debug.Log(transform.rotation.z);
             if (transform.rotation.z >= -0.02)
             {
                 phase = 1;
