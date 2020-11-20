@@ -22,6 +22,11 @@ public class GetInput : MonoBehaviour
         entry2.eventID = EventTriggerType.PointerUp;
         entry2.callback.AddListener((data) => { OnPointerUp((PointerEventData)data); });
         trigger.triggers.Add(entry2);
+
+        EventTrigger.Entry entry3 = new EventTrigger.Entry();
+        entry3.eventID = EventTriggerType.Drag;
+        entry3.callback.AddListener((data) => { OnDrag((PointerEventData)data); });
+        trigger.triggers.Add(entry3);
     }
 
     void OnPointerDown(PointerEventData data)
@@ -30,11 +35,19 @@ public class GetInput : MonoBehaviour
 
         player.StartAim(data.position);
     }
+    
 
     void OnPointerUp(PointerEventData data)
     {
         Debug.Log("PointerUp");
 
         player.EndAim(data.position);
+    }
+
+    void OnDrag(PointerEventData data)
+    {
+        Debug.Log("isDragging");
+
+        player.DraggingStarted();
     }
 }

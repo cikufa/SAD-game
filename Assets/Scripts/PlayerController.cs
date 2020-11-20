@@ -16,36 +16,46 @@ public class PlayerController : MonoBehaviour
     Vector3 dir = Vector3.zero;
     float dist = 0;
     float MaxDistance = 0;
-    bool isAiming = false;
+    bool isDragging = false;
     float t = 0;
+    Animator animator;
     #endregion
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
         Debug.DrawRay(transform.position, transform.right, Color.red);
 
-        if (isAiming)
+        if (isDragging)
         {
-            t += Time.deltaTime;
+            //t += Time.deltaTime;
             Vector3 mouseWorldPos = mainCam.ScreenToWorldPoint(Input.mousePosition);
-            Vector3 rotationDirection = -((mouseWorldPos - start).normalized);
-            Debug.DrawRay(transform.position, rotationDirection, Color.blue);
+            //if (start != mouseWorldPos)
+            //{
+                //Debug.Log("Changing rotation");
+                Vector3 rotationDirection = -((mouseWorldPos - start).normalized);
+                Debug.DrawRay(transform.position, rotationDirection, Color.blue);
 
-            float angle = Mathf.Atan2(rotationDirection.y, rotationDirection.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+                float angle = Mathf.Atan2(rotationDirection.y, rotationDirection.x) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            //}
+        }
 
+        if(rb.velocity.magnitude < 2)
+        {
+            animator.SetTrigger("EndAnimation");
         }
     }
 
     public void StartAim(Vector2 pos)
     {
         start = mainCam.ScreenToWorldPoint(pos);
-        isAiming = true;
+        animator.SetTrigger("clickON");
     }
 
     public void EndAim(Vector2 pos)
@@ -58,8 +68,9 @@ public class PlayerController : MonoBehaviour
         float forceAmount = forceCurve.Evaluate(dist);
         rb.AddForce(dir * forceAmount * forceConstant);
 
-        isAiming = false;
+        animator.SetTrigger("clickOFF");
         t = 0;
+        isDragging = false;
     }
 
     public void SetMaxDistance(Vector2 top_left,Vector2 bottom_right)
@@ -75,5 +86,10 @@ public class PlayerController : MonoBehaviour
         forceCurve.RemoveKey(1);
         forceCurve.AddKey(kEnd);
         forceCurve.SmoothTangents(1, 10);
+    }
+
+    public void DraggingStarted()
+    {
+        isDragging = true;
     }
 }

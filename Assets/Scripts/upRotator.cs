@@ -21,7 +21,7 @@ public class upRotator : MonoBehaviour
         if (phase == 1)
         {
             transform.Rotate(0f, 0f, -speed);
-            Debug.Log(transform.rotation.z);
+            //Debug.Log(transform.rotation.z);
             if (transform.rotation.z <= rightRange)
             {
                 phase = 2;
@@ -31,7 +31,7 @@ public class upRotator : MonoBehaviour
         else if (phase == 2)
         {
             transform.Rotate(0f, 0f, speed);
-            Debug.Log(transform.rotation.z);
+            //Debug.Log(transform.rotation.z);
             if (transform.rotation.z >= 0.99)
             {
                 phase = 3;
@@ -40,7 +40,7 @@ public class upRotator : MonoBehaviour
         else if (phase == 3)
         {
             transform.Rotate(0f, 0f, speed);
-            Debug.Log(transform.rotation.z);
+            //Debug.Log(transform.rotation.z);
             if (transform.rotation.z <= leftRange)
             {
                 phase = 4;
@@ -49,7 +49,7 @@ public class upRotator : MonoBehaviour
         else if (phase == 4)
         {
             transform.Rotate(0f, 0f, -speed);
-            Debug.Log(transform.rotation.z);
+            //Debug.Log(transform.rotation.z);
             if (transform.rotation.z >= 0.99)
             {
                 phase = 1;
