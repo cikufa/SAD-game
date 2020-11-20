@@ -727,10 +727,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 3b3b8e8d-d0c5-4fc3-b649-d45d047b7abe
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: SADGame
+  organizationId: lnastarran
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

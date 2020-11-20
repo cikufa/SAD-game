@@ -7,7 +7,7 @@ public class Enemy2 : MonoBehaviour
     public float moveSpeed = 5f;
 	public float rightLimit = 7f;
 	public float leftLimit = -7f;
-
+	public Animator enemy2animator;
 	public bool shouldGoRight = false;
 
     Vector3 pos, localScale;
@@ -22,10 +22,16 @@ public class Enemy2 : MonoBehaviour
     void Update()
     {
         CheckWhereToGo();
-        if (shouldGoRight)
-            MoveRight();
-        else
-            MoveLeft();
+		if (shouldGoRight)
+		{
+			enemy2animator.SetBool("L/R", true);
+			MoveRight();
+		}
+		else
+		{
+			enemy2animator.SetBool("L/R", false);
+			MoveLeft();
+		}
     }
 	void CheckWhereToGo()
 	{
