@@ -46,10 +46,21 @@ public class PlayerController : MonoBehaviour
             //}
         }
 
-        if(rb.velocity.magnitude < 2)
+        
+
+        
+    }
+
+    IEnumerator CheckVelocity()
+    {
+        yield return new WaitForSeconds(.5f);
+
+        while (rb.velocity.magnitude >= 2)
         {
-            animator.SetTrigger("EndAnimation");
+            yield return new WaitForEndOfFrame();
         }
+        animator.SetTrigger("EndAnimation");
+
     }
 
     public void StartAim(Vector2 pos)
@@ -71,6 +82,8 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("clickOFF");
         t = 0;
         isDragging = false;
+
+        StartCoroutine("CheckVelocity");
     }
 
     public void SetMaxDistance(Vector2 top_left,Vector2 bottom_right)
