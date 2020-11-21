@@ -15,7 +15,7 @@ public class winning : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("Object entered");
+            Debug.Log("level done");
             canvasObject.SetActive(true);
         }
 
