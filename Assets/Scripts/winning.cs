@@ -18,6 +18,7 @@ public class winning : MonoBehaviour
         {
             Debug.Log("level done");
             canvasObject.SetActive(true);
+            gameStatus.tag = "won";
         }
 
     }

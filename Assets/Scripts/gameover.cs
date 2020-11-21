@@ -14,7 +14,7 @@ public class gameover : MonoBehaviour
         //gameStatus.tag = "Untagged";
     }
     void OnTriggerEnter2D(Collider2D other) {
-		if(other.gameObject.tag == "Player"){
+		if(other.gameObject.tag == "Player" &&  gameStatus.tag != "won"){
 			Debug.Log("Object entered");
 			canvasObject.SetActive(true);
             gameStatus.tag = "lost";
