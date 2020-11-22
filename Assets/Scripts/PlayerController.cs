@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour
     float dist = 0;
     float MaxDistance = 0;
     bool isDragging = false;
-    float t = 0;
     Animator animator;
     #endregion
 
@@ -33,22 +32,19 @@ public class PlayerController : MonoBehaviour
 
         if (isDragging)
         {
-            //t += Time.deltaTime;
             Vector3 mouseWorldPos = mainCam.ScreenToWorldPoint(Input.mousePosition);
-            //if (start != mouseWorldPos)
-            //{
-                //Debug.Log("Changing rotation");
-                Vector3 rotationDirection = -((mouseWorldPos - start).normalized);
-                Debug.DrawRay(transform.position, rotationDirection, Color.blue);
+            Vector3 rotationDirection = -((mouseWorldPos - start).normalized);
+            Debug.DrawRay(transform.position, rotationDirection, Color.blue);
 
-                float angle = Mathf.Atan2(rotationDirection.y, rotationDirection.x) * Mathf.Rad2Deg;
-                transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-            //}
+            float angle = Mathf.Atan2(rotationDirection.y, rotationDirection.x) * Mathf.Rad2Deg;
+
+            CheckAngleAndFlip(angle);
+
+
+            Debug.Log("angle:  "+angle);
+            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
-
-        
-
-        
+       
     }
 
     IEnumerator CheckVelocity()
@@ -60,7 +56,6 @@ public class PlayerController : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         animator.SetTrigger("EndAnimation");
-
     }
 
     public void StartAim(Vector2 pos)
@@ -80,7 +75,6 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(dir * forceAmount * forceConstant);
 
         animator.SetTrigger("clickOFF");
-        t = 0;
         isDragging = false;
 
         StartCoroutine("CheckVelocity");
@@ -104,5 +98,17 @@ public class PlayerController : MonoBehaviour
     public void DraggingStarted()
     {
         isDragging = true;
+    }
+
+    void CheckAngleAndFlip(float angle)
+    {
+        if(angle >= -90 && angle <= 90)
+        {
+            GetComponent<SpriteRenderer>().flipY= false;
+        }
+        else if((angle > 90 && angle <= 180) || (angle >= -180 && angle < -90))
+        {
+            GetComponent<SpriteRenderer>().flipY = true;
+        }
     }
 }
