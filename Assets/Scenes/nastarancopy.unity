@@ -1715,7 +1715,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &384327130
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1813,7 +1813,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384327129}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95778b57be8b9894fb7187e8dddc517e, type: 3}
   m_Name: 
@@ -1821,7 +1821,7 @@ MonoBehaviour:
   lights:
   - {fileID: 289592941}
   itself: {fileID: 384327129}
-  time: 5
+  time: 1
 --- !u!1 &416705363
 GameObject:
   m_ObjectHideFlags: 0
@@ -8736,6 +8736,7 @@ GameObject:
   - component: {fileID: 1942521411}
   - component: {fileID: 1942521410}
   - component: {fileID: 1942521409}
+  - component: {fileID: 1942521412}
   m_Layer: 0
   m_Name: Circle Light
   m_TagString: Untagged
@@ -8813,7 +8814,7 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 1.5
+  m_PointLightInnerRadius: 1
   m_PointLightOuterRadius: 3
   m_PointLightDistance: 3
   m_PointLightQuality: 1
@@ -8827,6 +8828,24 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1942521412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942521407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5e7338f9839eb3418a0a569a0b65ab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 1942521411}
+  upLimit: 5
+  downLimit: 3
+  innerrPlus: 0.5
+  outerPlus: 0.5
+  time: 1
 --- !u!114 &1947029565 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5592262705560993483, guid: 4928f0c932927444f894106b5fd8486c,
