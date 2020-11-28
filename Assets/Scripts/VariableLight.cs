@@ -20,10 +20,11 @@ public class VariableLight : MonoBehaviour
     }
     IEnumerator DoEveryFelanSeconds()
     {
-
-        yield return new WaitForSeconds(time);
-        DoSomething();
-        StartCoroutine(DoEveryFelanSeconds());
+        while (true)
+        {
+            yield return new WaitForSeconds(time);
+            DoSomething();
+        }
     }
     void DoSomething()
     {

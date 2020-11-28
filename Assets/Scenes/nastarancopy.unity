@@ -1085,8 +1085,6 @@ GameObject:
   - component: {fileID: 289592944}
   - component: {fileID: 289592943}
   - component: {fileID: 289592942}
-  - component: {fileID: 289592945}
-  - component: {fileID: 289592946}
   m_Layer: 0
   m_Name: Parent Circle Light
   m_TagString: Untagged
@@ -1178,41 +1176,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &289592945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289592941}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 749d26f89af211247a9471885e3c760f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itslight: {fileID: 1942521411}
-  intensity: 3
-  sight: 10
---- !u!114 &289592946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289592941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f81e727d92de3874681e91d7dbea9fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  light: {fileID: 1942521411}
-  innerrPlus: 0.5
-  outerPlus: 0.5
-  time: 1
-  moveSpeed: 1
-  upLimit: 5
-  downLimit: 0
-  shouldGetBigger: 0
 --- !u!1 &295346181
 GameObject:
   m_ObjectHideFlags: 0
@@ -1744,6 +1707,8 @@ GameObject:
   m_Component:
   - component: {fileID: 384327131}
   - component: {fileID: 384327130}
+  - component: {fileID: 384327132}
+  - component: {fileID: 384327133}
   m_Layer: 0
   m_Name: env2 (1)
   m_TagString: Untagged
@@ -1815,6 +1780,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &384327132
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384327129}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.05379665, y: 0.16141295}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5324067, y: 0.3563038}
+  m_EdgeRadius: 0
+--- !u!114 &384327133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384327129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95778b57be8b9894fb7187e8dddc517e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lights:
+  - {fileID: 289592941}
+  itself: {fileID: 384327129}
+  time: 5
 --- !u!1 &416705363
 GameObject:
   m_ObjectHideFlags: 0
@@ -7601,7 +7608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1505241658
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8778,7 +8785,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.00000015718526, y: 0}
   serializedVersion: 2
-  m_Radius: 0.51752955
+  m_Radius: 0.5
 --- !u!114 &1942521411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8806,7 +8813,7 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 1.5772992
+  m_PointLightInnerRadius: 1.5
   m_PointLightOuterRadius: 3
   m_PointLightDistance: 3
   m_PointLightQuality: 1
@@ -9157,6 +9164,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5592262705560993462, guid: 4928f0c932927444f894106b5fd8486c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5592262705560993463, guid: 4928f0c932927444f894106b5fd8486c,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5592262705560993481, guid: 4928f0c932927444f894106b5fd8486c,
         type: 3}

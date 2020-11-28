@@ -31,7 +31,7 @@ public class GetInput : MonoBehaviour
 
     void OnPointerDown(PointerEventData data)
     {
-        Debug.Log("PointerDown");
+        //Debug.Log("PointerDown");
 
         player.StartAim(data.position);
     }
@@ -39,14 +39,14 @@ public class GetInput : MonoBehaviour
 
     void OnPointerUp(PointerEventData data)
     {
-        Debug.Log("PointerUp");
+        //Debug.Log("PointerUp");
 
         player.EndAim(data.position);
     }
 
     void OnDrag(PointerEventData data)
     {
-        Debug.Log("isDragging");
+        //Debug.Log("isDragging");
 
         player.DraggingStarted();
     }
