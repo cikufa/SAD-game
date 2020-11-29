@@ -6,6 +6,7 @@ TagManager:
   tags:
   - lost
   - won
+  - shieldItem
   layers:
   - Default
   - TransparentFX
@@ -48,4 +49,7 @@ TagManager:
     locked: 0
   - name: foreground
     uniqueID: 2288544581
+    locked: 0
+  - name: ignore light
+    uniqueID: 1081537519
     locked: 0
