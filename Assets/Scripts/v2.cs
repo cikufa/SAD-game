@@ -6,13 +6,13 @@ using UnityEngine.Experimental.Rendering.Universal;
 public class v2 : MonoBehaviour
 {
 	public Light2D light;
-	public float innerrPlus;
-	public float outerPlus;
-	public float time;
-	public float upLimit = 7f;
-	public float downLimit = 0f;
+	public float innerrPlus=0.5f;
+	public float outerPlus = 0.5f;
+	//public float time;
+	public float upLimit = 5f;
+	public float downLimit = 1f;
 	public bool shouldGetBigger = false;
-	public CircleCollider2D itsCollider;
+	//public CircleCollider2D itsCollider;
 	// Update is called once per frame
 	void Update()
 	{
@@ -32,17 +32,17 @@ public class v2 : MonoBehaviour
 	{
 		if (light.pointLightOuterRadius < upLimit)
 			shouldGetBigger = true;
-		else if (light.pointLightOuterRadius > downLimit)
+		else
 			shouldGetBigger = false;
 	}
 	void GetBigger()
 	{
-		light.pointLightOuterRadius += (float)outerPlus * Time.deltaTime;
-		itsCollider.radius += (float)0.01;
+		light.pointLightOuterRadius += (float)outerPlus;
+		//itsCollider.radius += (float)0.01;
 	}
 	void GetSmaller()
 	{
-		light.pointLightOuterRadius -= (float)outerPlus* Time.deltaTime;
-		itsCollider.radius -= (float)0.01;
+		light.pointLightOuterRadius -= (float)outerPlus;
+		//itsCollider.radius -= (float)0.01;
 	}
 }
