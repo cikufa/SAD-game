@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 13771014}
   - component: {fileID: 13771012}
   - component: {fileID: 13771016}
+  - component: {fileID: 13771013}
   m_Layer: 0
   m_Name: shield
   m_TagString: shieldItem
@@ -147,12 +148,32 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13771011}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 512d9f7d888b67e4497d0f8a4ea35a07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  bubblepop: {fileID: 13771013}
+--- !u!95 &13771013
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13771011}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bf6d6784e3070134b96d85f97b2d13aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &13771014
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -194,7 +215,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 4485300514341696304, guid: 32a8d737d1a88c94e945324a9cd1b5df,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.48235294}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1481,7 +1502,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shield: {fileID: 13771011}
-  shieldTime: 5
 --- !u!1 &1196296810
 GameObject:
   m_ObjectHideFlags: 0
