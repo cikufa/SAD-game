@@ -4,9 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
+  - key
+=======
   - lost
   - won
   - shieldItem
+>>>>>>> d076fea785832f42d85f0f1dd8762fca304baed0
   layers:
   - Default
   - TransparentFX

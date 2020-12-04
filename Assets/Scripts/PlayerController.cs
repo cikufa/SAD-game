@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
 
         dir = (start - end).normalized;
         dist = (start - end).magnitude;
-        Debug.Log("Dist : " + dist);
+        //Debug.Log("Dist : " + dist);
         float forceAmount = forceCurve.Evaluate(dist);
         rb.AddForce(dir * forceAmount * forceConstant);
 
