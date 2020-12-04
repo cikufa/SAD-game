@@ -4,6 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - lost
+  - won
   - shieldItem
   layers:
   - Default
@@ -47,4 +49,10 @@ TagManager:
     locked: 0
   - name: foreground
     uniqueID: 3272448569
+    locked: 0
+  - name: ignore light
+    uniqueID: 3163279847
+    locked: 0
+  - name: UI
+    uniqueID: 2224288463
     locked: 0
