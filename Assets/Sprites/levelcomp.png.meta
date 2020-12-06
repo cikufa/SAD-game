@@ -1,10 +1,55 @@
 fileFormatVersion: 2
-guid: 75f599af3762dbd458b520116854d669
+guid: 5481370c02aba9949a2b6224005bba87
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 3270741471439580569
     second: levelcomp_0
+  - first:
+      213: -8531124569365659706
+    second: levelcomp_1
+  - first:
+      213: 6132975691576958362
+    second: levelcomp_2
+  - first:
+      213: 4265401692152186884
+    second: levelcomp_3
+  - first:
+      213: 4772721484148248049
+    second: levelcomp_4
+  - first:
+      213: 1739803559204517112
+    second: levelcomp_5
+  - first:
+      213: 773104266950711227
+    second: levelcomp_6
+  - first:
+      213: 3075567571824940516
+    second: levelcomp_7
+  - first:
+      213: 8450993385329985999
+    second: levelcomp_8
+  - first:
+      213: -322243977998479803
+    second: levelcomp_0
+  - first:
+      213: -5086953744090668732
+    second: levelcomp_1
+  - first:
+      213: -3903886542494191476
+    second: levelcomp_3
+  - first:
+      213: 3969023429048576096
+    second: levelcomp_4
+  - first:
+      213: -644462946078213931
+    second: levelcomp_6
+  - first:
+      213: 6445541388319275014
+    second: levelcomp_7
+  - first:
+      213: 3412980173388963831
+    second: levelcomp_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -44,11 +89,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 2000
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -118,6 +163,132 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 13
+        y: 130
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e44603fc8278bf0800000000000000
+      internalID: -322243977998479803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: levelcomp_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 130
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441e1a685828769b0800000000000000
+      internalID: -5086953744090668732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: levelcomp_3
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 130
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80b43f8fdb92d9c0800000000000000
+      internalID: -3903886542494191476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: levelcomp_4
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 66
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068a4a9a7cdc41730800000000000000
+      internalID: 3969023429048576096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: levelcomp_6
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 66
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d83b147d586e07f0800000000000000
+      internalID: -644462946078213931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: levelcomp_7
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 66
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60839d32eb9237950800000000000000
+      internalID: 6445541388319275014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: levelcomp_8
+      rect:
+        serializedVersion: 2
+        x: 13
         y: 2
         width: 38
         height: 60
@@ -128,8 +299,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99d6b450a02046d20800000000000000
-      internalID: 3270741471439580569
+      spriteID: 7ffdc4c82675d5f20800000000000000
+      internalID: 3412980173388963831
       vertices: []
       indices: 
       edges: []
