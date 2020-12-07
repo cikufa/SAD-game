@@ -1,58 +1,19 @@
 fileFormatVersion: 2
-guid: 5481370c02aba9949a2b6224005bba87
+guid: 56650425a3ef528459eb1314722f8fbc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3270741471439580569
-    second: levelcomp_0
+      213: 6422421177024851806
+    second: levelcomp3_0
   - first:
-      213: -8531124569365659706
-    second: levelcomp_1
+      213: 1161859260896538276
+    second: levelcomp3_1
   - first:
-      213: 6132975691576958362
-    second: levelcomp_2
+      213: -7831740777306513836
+    second: levelcomp3_1
   - first:
-      213: 4265401692152186884
-    second: levelcomp_2
-  - first:
-      213: 4772721484148248049
-    second: levelcomp_3
-  - first:
-      213: 1739803559204517112
-    second: levelcomp_4
-  - first:
-      213: 773104266950711227
-    second: levelcomp_6
-  - first:
-      213: 3075567571824940516
-    second: levelcomp_5
-  - first:
-      213: 8450993385329985999
-    second: levelcomp_6
-  - first:
-      213: -322243977998479803
-    second: levelcomp_0
-  - first:
-      213: -5086953744090668732
-    second: levelcomp_1
-  - first:
-      213: -3903886542494191476
-    second: levelcomp_2
-  - first:
-      213: 3969023429048576096
-    second: levelcomp_3
-  - first:
-      213: -644462946078213931
-    second: levelcomp_6
-  - first:
-      213: 6445541388319275014
-    second: levelcomp_5
-  - first:
-      213: 3412980173388963831
-    second: levelcomp_6
-  - first:
-      213: -4527055481786201557
-    second: levelcomp_7
+      213: -8460962905849424021
+    second: levelcomp3_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -162,112 +123,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: levelcomp_0
+      name: levelcomp3_0
       rect:
         serializedVersion: 2
         x: 13
-        y: 130
+        y: 66
         width: 38
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54e44603fc8278bf0800000000000000
-      internalID: -322243977998479803
+      spriteID: e5f23867806012950800000000000000
+      internalID: 6422421177024851806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: levelcomp_1
+      name: levelcomp3_1
       rect:
         serializedVersion: 2
         x: 77
-        y: 130
-        width: 38
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 441e1a685828769b0800000000000000
-      internalID: -5086953744090668732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: levelcomp_2
-      rect:
-        serializedVersion: 2
-        x: 141
-        y: 130
-        width: 38
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c80b43f8fdb92d9c0800000000000000
-      internalID: -3903886542494191476
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: levelcomp_3
-      rect:
-        serializedVersion: 2
-        x: 13
         y: 66
         width: 38
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 068a4a9a7cdc41730800000000000000
-      internalID: 3969023429048576096
+      spriteID: 45e14b3e141105390800000000000000
+      internalID: -7831740777306513836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: levelcomp_5
-      rect:
-        serializedVersion: 2
-        x: 141
-        y: 66
-        width: 38
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60839d32eb9237950800000000000000
-      internalID: 6445541388319275014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: levelcomp_6
+      name: levelcomp3_2
       rect:
         serializedVersion: 2
         x: 13
@@ -275,56 +173,14 @@ TextureImporter:
         width: 38
         height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ffdc4c82675d5f20800000000000000
-      internalID: 3412980173388963831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: levelcomp_4
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 66
-        width: 38
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f478558e16052810800000000000000
-      internalID: 1739803559204517112
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: levelcomp_7
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 2
-        width: 38
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2a06a1560bac21c0800000000000000
-      internalID: -4527055481786201557
+      spriteID: b679613b01f949a80800000000000000
+      internalID: -8460962905849424021
       vertices: []
       indices: 
       edges: []
