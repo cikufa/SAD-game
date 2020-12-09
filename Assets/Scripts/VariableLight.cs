@@ -11,7 +11,7 @@ public class VariableLight : MonoBehaviour
     public double downLimit;
     public float innerrPlus;
     public float outerPlus;
-    public float time=1f;
+
     // Start is called before the first frame update
 
     void Start()
@@ -22,9 +22,9 @@ public class VariableLight : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(time);
+            yield return new WaitForSeconds(EnemySpeedController.time);
             DoSomething();
-            yield return new WaitForSeconds(time);
+            yield return new WaitForSeconds(EnemySpeedController.time);
             DoSomething2();
         }
     }
@@ -46,11 +46,11 @@ public class VariableLight : MonoBehaviour
             Debug.Log("Minusing");
         }
     }
-       /* if(light.pointLightOuterRadius > downLimit)
-        {
-            //light.pointLightInnerRadius -= (float)rPlus;
-            light.pointLightOuterRadius -= (float)Rplus;
+    /* if(light.pointLightOuterRadius > downLimit)
+     {
+         //light.pointLightInnerRadius -= (float)rPlus;
+         light.pointLightOuterRadius -= (float)Rplus;
 
-        }
-       */
+     }
+    */
 }

@@ -12,6 +12,8 @@ public class EnemySpeedController : MonoBehaviour
     public static float uprotatespeed = 1f;
     public static float leftrotatespeed = 1f;
 
+    public static float time = 1f;
+
     private bool once = true;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -25,6 +27,7 @@ public class EnemySpeedController : MonoBehaviour
                 rotatespeed /= 2;
                 uprotatespeed /= 2;
                 leftrotatespeed /= 2;
+                time *= 2;
 
                 once = false;
                 gameObject.SetActive(false);
@@ -44,6 +47,7 @@ public class EnemySpeedController : MonoBehaviour
         rotatespeed *= 2;
         uprotatespeed *= 2;
         leftrotatespeed *= 2;
+        time /= 2;
         Destroy(gameObject, 1f);
     }
     void Start()

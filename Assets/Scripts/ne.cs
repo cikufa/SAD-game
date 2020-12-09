@@ -41,10 +41,10 @@ public class ne : MonoBehaviour
 		else if (pos.x > rightLimit)
 			shouldGoRight = false;
 
-		//if (((shouldGoRight) && (localScale.x < 0)) || ((!shouldGoRight) && (localScale.x > 0)))
-		//localScale.x *= -1;
+		if (((shouldGoRight) && (localScale.x < 0)) || ((!shouldGoRight) && (localScale.x > 0)))
+		localScale.x *= -1;
 
-		//transform.localScale = localScale;
+		transform.localScale = localScale;
 
 	}
 
