@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ne : MonoBehaviour
+public class snail : MonoBehaviour
 {
-	public float moveSpeed = 5f;
-	public float rightLimit = 7f;
-	public float leftLimit = -7f;
-	//public Animator enemy2animator;
+	public float moveSpeed = 1f;
+	public float limit = 4f;
+	private float rightLimit;
+	private float leftLimit;
 	public bool shouldGoRight = false;
 
 	Vector3 pos, localScale;
@@ -16,6 +16,8 @@ public class ne : MonoBehaviour
 	{
 		pos = transform.position;
 		localScale = transform.localScale;
+		leftLimit = pos.x - limit;
+		rightLimit = pos.x + limit;
 	}
 
 	// Update is called once per frame
@@ -24,12 +26,10 @@ public class ne : MonoBehaviour
 		CheckWhereToGo();
 		if (shouldGoRight)
 		{
-			//enemy2animator.SetBool("L/R", true);
 			MoveRight();
 		}
 		else
 		{
-			//enemy2animator.SetBool("L/R", false);
 			MoveLeft();
 		}
 	}
@@ -42,7 +42,7 @@ public class ne : MonoBehaviour
 			shouldGoRight = false;
 
 		if (((shouldGoRight) && (localScale.x < 0)) || ((!shouldGoRight) && (localScale.x > 0)))
-		localScale.x *= -1;
+			localScale.x *= -1;
 
 		transform.localScale = localScale;
 
