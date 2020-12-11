@@ -20,6 +20,24 @@ TextureImporter:
   - first:
       213: 7237060979605829429
     second: Flashlight_5
+  - first:
+      213: -187890394062558236
+    second: Flashlight_0
+  - first:
+      213: 3355523915260253794
+    second: Flashlight_1
+  - first:
+      213: 6747549276704922634
+    second: Flashlight_2
+  - first:
+      213: -6765335345541941811
+    second: Flashlight_3
+  - first:
+      213: 8540055012175075889
+    second: Flashlight_4
+  - first:
+      213: 3685173150428239938
+    second: Flashlight_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -180,10 +198,10 @@ TextureImporter:
       name: Flashlight_0
       rect:
         serializedVersion: 2
-        x: 29
+        x: 0
         y: 0
-        width: 7
-        height: 33
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,8 +209,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 130acb41b8d826bd0800000000000000
-      internalID: -2638390803197812687
+      spriteID: 4eb613d9eaa746df0800000000000000
+      internalID: -187890394062558236
       vertices: []
       indices: 
       edges: []
@@ -201,10 +219,10 @@ TextureImporter:
       name: Flashlight_1
       rect:
         serializedVersion: 2
-        x: 93
+        x: 64
         y: 0
-        width: 11
-        height: 33
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,8 +230,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34b57ada5ed07a3d0800000000000000
-      internalID: -3195570130483979453
+      spriteID: 2665a6cf837319e20800000000000000
+      internalID: 3355523915260253794
       vertices: []
       indices: 
       edges: []
@@ -222,10 +240,10 @@ TextureImporter:
       name: Flashlight_2
       rect:
         serializedVersion: 2
-        x: 157
+        x: 128
         y: 0
-        width: 15
-        height: 33
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,8 +251,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8346fde1b2d2a1a0800000000000000
-      internalID: -6799640825732643954
+      spriteID: a0cd07e215c14ad50800000000000000
+      internalID: 6747549276704922634
       vertices: []
       indices: 
       edges: []
@@ -243,10 +261,10 @@ TextureImporter:
       name: Flashlight_3
       rect:
         serializedVersion: 2
-        x: 221
+        x: 192
         y: 0
-        width: 7
-        height: 33
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,8 +272,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cd00f1b61cc8e460800000000000000
-      internalID: 7271285996236312006
+      spriteID: dc5f396f853bc12a0800000000000000
+      internalID: -6765335345541941811
       vertices: []
       indices: 
       edges: []
@@ -264,10 +282,10 @@ TextureImporter:
       name: Flashlight_4
       rect:
         serializedVersion: 2
-        x: 282
+        x: 256
         y: 0
-        width: 10
-        height: 33
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,8 +293,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48b35be58520c3b80800000000000000
-      internalID: -8413847425265615996
+      spriteID: 13a5df259ce548670800000000000000
+      internalID: 8540055012175075889
       vertices: []
       indices: 
       edges: []
@@ -285,10 +303,10 @@ TextureImporter:
       name: Flashlight_5
       rect:
         serializedVersion: 2
-        x: 342
+        x: 320
         y: 0
-        width: 14
-        height: 33
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,8 +314,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 537fe3b0e943f6460800000000000000
-      internalID: 7237060979605829429
+      spriteID: 2481517947d542330800000000000000
+      internalID: 3685173150428239938
       vertices: []
       indices: 
       edges: []
