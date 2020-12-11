@@ -6,31 +6,18 @@ using UnityEngine;
 
 public class gameover : MonoBehaviour
 {
-    public GameObject canvasObject;
-    public GameObject gameStatus;
-    // public GameObject Player;
-
-    void Start()
-    {
-
-
-        //gameStatus.tag = "Untagged";
-    }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player" && gameStatus.tag != "won" && !testShield.shieldactive)
-        {
+        if (other.gameObject.tag == "Player" && !testShield.shieldactive)
+        {           
             other.GetComponent<PlayerController>().life--;
+            EventBroker.CallUpdateLifeInUi(other.GetComponent<PlayerController>().life);
             if (other.GetComponent<PlayerController>().life == 0)
             {
-                other.GetComponent<PlayerController>().hasLost = true;
-                canvasObject.SetActive(true);
-                gameStatus.tag = "lost";
+                EventBroker.CallGameOver();
+                GameManager.Instance.TogglePause();                
             }            
         }
 
     }
-
-
-
 }

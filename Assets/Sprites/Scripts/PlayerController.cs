@@ -11,8 +11,7 @@ public class PlayerController : MonoBehaviour
 
     [HideInInspector]
     public int life = 3;
-    [HideInInspector]
-    public bool hasLost = false;
+
 
     #region private fields
     Rigidbody2D rb;
@@ -23,12 +22,14 @@ public class PlayerController : MonoBehaviour
     float MaxDistance = 0;
     bool isDragging = false;
     Animator animator;
+    bool hasLost = false;
     #endregion
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        EventBroker.GameOver += GameOver;
     }
 
     private void Update()
@@ -115,5 +116,15 @@ public class PlayerController : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().flipY = true;
         }
+    }
+
+    void GameOver()
+    {
+        hasLost = true;
+    }
+
+    private void OnDestroy()
+    {
+        EventBroker.GameOver -= GameOver;
     }
 }

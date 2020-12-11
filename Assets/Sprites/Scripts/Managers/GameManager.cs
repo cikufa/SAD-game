@@ -35,7 +35,7 @@ public class GameManager : Singleton<GameManager>
 
         InstantiateSystemprefabs();
 
-        LoadLevel("Map1");
+        LoadLevel("Fatemeh");
         UpdateState(GameState.PLAYING);
     }
 
