@@ -20,8 +20,13 @@ public class gameover : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && gameStatus.tag != "won" && !testShield.shieldactive)
         {
-            canvasObject.SetActive(true);
-            gameStatus.tag = "lost";
+            other.GetComponent<PlayerController>().life--;
+            if (other.GetComponent<PlayerController>().life == 0)
+            {
+                other.GetComponent<PlayerController>().hasLost = true;
+                canvasObject.SetActive(true);
+                gameStatus.tag = "lost";
+            }            
         }
 
     }
