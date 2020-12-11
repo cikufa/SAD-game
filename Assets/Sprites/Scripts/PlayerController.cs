@@ -9,6 +9,10 @@ public class PlayerController : MonoBehaviour
     public AnimationCurve forceCurve;
     public float rotationSpeed;
 
+    [HideInInspector]
+    public int life = 3;
+
+
     #region private fields
     Rigidbody2D rb;
     Vector3 start = Vector3.zero;
@@ -18,19 +22,21 @@ public class PlayerController : MonoBehaviour
     float MaxDistance = 0;
     bool isDragging = false;
     Animator animator;
+    bool hasLost = false;
     #endregion
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        EventBroker.GameOver += GameOver;
     }
 
     private void Update()
     {
         Debug.DrawRay(transform.position, transform.right, Color.red);
 
-        if (isDragging)
+        if (!hasLost && isDragging)
         {
             Vector3 mouseWorldPos = mainCam.ScreenToWorldPoint(Input.mousePosition);
             Vector3 rotationDirection = -((mouseWorldPos - start).normalized);
@@ -110,5 +116,15 @@ public class PlayerController : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().flipY = true;
         }
+    }
+
+    void GameOver()
+    {
+        hasLost = true;
+    }
+
+    private void OnDestroy()
+    {
+        EventBroker.GameOver -= GameOver;
     }
 }
