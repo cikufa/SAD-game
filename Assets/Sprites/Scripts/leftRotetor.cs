@@ -20,7 +20,7 @@ public class leftRotetor : MonoBehaviour
     {
         if (phase == 1)
         {
-            transform.Rotate(0f, 0f, -EnemySpeedController.leftrotatespeed);
+            transform.Rotate(0f, 0f, -EnemySpeedController.leftrotatespeed * Time.deltaTime);
             //Debug.Log(transform.rotation.z);
             if (transform.rotation.z <= upRange)
             {
@@ -30,7 +30,7 @@ public class leftRotetor : MonoBehaviour
 
         else if (phase == 2)
         {
-            transform.Rotate(0f, 0f, EnemySpeedController.leftrotatespeed);
+            transform.Rotate(0f, 0f, EnemySpeedController.leftrotatespeed * Time.deltaTime);
             //Debug.Log(transform.rotation.z);
             if (transform.rotation.z >= -0.5)
             {
@@ -39,7 +39,7 @@ public class leftRotetor : MonoBehaviour
         }
         else if (phase == 3)
         {
-            transform.Rotate(0f, 0f, EnemySpeedController.leftrotatespeed);
+            transform.Rotate(0f, 0f, EnemySpeedController.leftrotatespeed * Time.deltaTime);
             //Debug.Log(transform.rotation.z);
             if (transform.rotation.z >= downRange)
             {
@@ -48,7 +48,7 @@ public class leftRotetor : MonoBehaviour
         }
         else if (phase == 4)
         {
-            transform.Rotate(0f, 0f, -EnemySpeedController.leftrotatespeed);
+            transform.Rotate(0f, 0f, -EnemySpeedController.leftrotatespeed * Time.deltaTime);
             //Debug.Log(transform.rotation.z);
             if (transform.rotation.z <= -0.5)
             {
