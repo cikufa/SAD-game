@@ -20,7 +20,7 @@ public class upRotator : MonoBehaviour
     {
         if (phase == 1)
         {
-            transform.Rotate(0f, 0f, -EnemySpeedController.uprotatespeed);
+            transform.Rotate(0f, 0f, -EnemySpeedController.uprotatespeed * Time.deltaTime);
             //Debug.Log(transform.rotation.z);
             if (transform.rotation.z <= rightRange)
             {
@@ -30,7 +30,7 @@ public class upRotator : MonoBehaviour
 
         else if (phase == 2)
         {
-            transform.Rotate(0f, 0f, EnemySpeedController.uprotatespeed);
+            transform.Rotate(0f, 0f, EnemySpeedController.uprotatespeed * Time.deltaTime);
             //Debug.Log(transform.rotation.z);
             if (transform.rotation.z >= 0.99)
             {
@@ -39,7 +39,7 @@ public class upRotator : MonoBehaviour
         }
         else if (phase == 3)
         {
-            transform.Rotate(0f, 0f, EnemySpeedController.uprotatespeed);
+            transform.Rotate(0f, 0f, EnemySpeedController.uprotatespeed * Time.deltaTime);
             //Debug.Log(transform.rotation.z);
             if (transform.rotation.z <= leftRange)
             {
@@ -48,7 +48,7 @@ public class upRotator : MonoBehaviour
         }
         else if (phase == 4)
         {
-            transform.Rotate(0f, 0f, -EnemySpeedController.uprotatespeed);
+            transform.Rotate(0f, 0f, -EnemySpeedController.uprotatespeed * Time.deltaTime);
             //Debug.Log(transform.rotation.z);
             if (transform.rotation.z >= 0.99)
             {
