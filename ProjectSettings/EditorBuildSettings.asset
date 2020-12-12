@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fatemeh.unity
     guid: 05964a4ab87277148994973d0ab80a04
+  - enabled: 1
+    path: Assets/Scenes/levelcompletion.unity
+    guid: ff82625ea2c74bb479d7f91745528359
   m_configObjects: {}

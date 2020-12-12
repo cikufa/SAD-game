@@ -1,0 +1,30 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class LoadLvl : MonoBehaviour
+{
+    string mapNumberToLoad;
+
+    private void Start()
+    {
+        GameManager.Instance.mapNumber++;
+        PlayerPrefs.SetString("checkpointIsValid", "false");
+        mapNumberToLoad = GameManager.Instance.mapNumber >= 3 ? string.Empty : GameManager.Instance.mapNumber .ToString();
+
+        GameManager.Instance.SaveProgress();
+    }
+
+
+    public void OnClickLoadNewLvl()
+    {       
+        if (mapNumberToLoad != string.Empty)
+        {
+            GameManager.Instance.LoadLevel(mapNumberToLoad);
+        }
+        else
+        {
+            Debug.Log("No more maps.");
+        }
+    }
+}

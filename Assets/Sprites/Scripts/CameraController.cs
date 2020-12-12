@@ -7,9 +7,14 @@ public class CameraController : MonoBehaviour
     public Transform Player;
 	protected Transform myTransform;
 	public float CamMoveSpeed = 5f;
-	
-	
-	void FixedUpdate(){
+
+
+    private void Start()
+    {
+        Player = GameObject.FindWithTag("Player").transform;
+    }
+
+    void FixedUpdate(){
 		
 		
 		Vector3 camPosition = transform.position;

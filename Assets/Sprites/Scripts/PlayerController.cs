@@ -25,11 +25,16 @@ public class PlayerController : MonoBehaviour
     bool hasLost = false;
     #endregion
 
+    private void Awake()
+    {
+        mainCam = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        EventBroker.GameOver += GameOver;
+        EventBroker.GameOver += GameOver;       
     }
 
     private void Update()
@@ -46,8 +51,6 @@ public class PlayerController : MonoBehaviour
 
             CheckAngleAndFlip(angle);
 
-
-            Debug.Log("angle:  "+angle);
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
        

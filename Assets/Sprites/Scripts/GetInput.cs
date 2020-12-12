@@ -3,11 +3,13 @@ using UnityEngine.EventSystems;
 
 public class GetInput : MonoBehaviour
 {
-    public PlayerController player; 
+    PlayerController player; 
 
 
     private void Start()
     {
+        player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+
         RectTransform rt = GetComponent<RectTransform>();
         Vector3[] v = new Vector3[4];
         rt.GetWorldCorners(v);

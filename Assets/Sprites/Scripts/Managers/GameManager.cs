@@ -26,6 +26,8 @@ public class GameManager : Singleton<GameManager>
         private set { currGameState = value; }
     }
 
+    public int mapNumber = 1;
+
     private void Start()
     {
         DontDestroyOnLoad(this);
@@ -35,8 +37,19 @@ public class GameManager : Singleton<GameManager>
 
         InstantiateSystemprefabs();
 
-        LoadLevel("Fatemeh");
+        //LoadData
+        if (PlayerPrefs.HasKey("Map"))
+        {
+            mapNumber = PlayerPrefs.GetInt("Map");
+        }
+
+        LoadLevel(mapNumber.ToString());
         UpdateState(GameState.PLAYING);
+
+
+        
+        
+        
     }
 
     public void LoadLevel(string levelName)
@@ -134,6 +147,19 @@ public class GameManager : Singleton<GameManager>
     public void ReplayLevel()
     {
         LoadLevel(_currentLevelName);
+    }
+
+    public void SaveProgress()
+    {
+        PlayerPrefs.SetInt("Map", mapNumber);
+    }
+
+    public void SaveProgress(Vector2 checkPointPos,int checkPointNum)
+    {
+        PlayerPrefs.SetString("checkpointIsValid", "true");
+        PlayerPrefs.SetInt("CheckPointNum", checkPointNum);     //child number of checkpoint
+        PlayerPrefs.SetFloat("CheckPointX", checkPointPos.x);
+        PlayerPrefs.SetFloat("CheckPointY", checkPointPos.y);
     }
 
 }

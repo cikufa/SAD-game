@@ -16,7 +16,7 @@ public class Invisible : MonoBehaviour
     void Start()
     {
         //light = Light.Find("Circle Light");
-        player = GameObject.Find("Player");
+        player = GameObject.FindWithTag("Player");
         //box = GameObject.Find("Parent Circle Light");
         //box.gameObject.SetActive(true);
     }
