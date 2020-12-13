@@ -22,6 +22,7 @@ public class levelcomp1 : MonoBehaviour
 
     [Space]
     public GameObject button;
+    public Transform enemyManager;
 
     void Start()
     {
@@ -88,11 +89,13 @@ public class levelcomp1 : MonoBehaviour
             {
                 holdBallAnimator.SetBool("hold", true);
                 onetime2 = 1;
+                button.SetActive(true);
+                enemyManager.GetComponent<EnemyInCompletionLevel>().Explode();
             }
             
         }
 
-        button.SetActive(true);
+        
 
     }
 }

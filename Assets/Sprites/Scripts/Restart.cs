@@ -9,6 +9,7 @@ public class Restart : MonoBehaviour
     {
         //GameManager.Instance.TogglePause();
         //EventBroker.CallRetryLevel();
+        PlayerPrefs.SetString("checkpointIsValid", "false");
         transform.parent.gameObject.SetActive(false);
         GameManager.Instance.ReplayLevel();
     }
