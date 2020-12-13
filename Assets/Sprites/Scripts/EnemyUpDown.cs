@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy2 : MonoBehaviour
+public class EnemyUpDown : MonoBehaviour
 {
 
-    public float rightLimit = 7f;
-    public float leftLimit = -7f;
+    public float upLimit = 7f;
+    public float downLimit = -7f;
     public Animator enemy2animator;
-    public bool shouldGoRight = false;
+    public bool shouldGoUp = false;
 
     Vector3 pos, localScale;
     // Start is called before the first frame update
@@ -22,24 +22,24 @@ public class Enemy2 : MonoBehaviour
     void Update()
     {
         CheckWhereToGo();
-        if (shouldGoRight)
+        if (shouldGoUp)
         {
             enemy2animator.SetBool("L/R", true);
-            MoveRight();
+            MoveUp();
         }
         else
         {
             enemy2animator.SetBool("L/R", false);
-            MoveLeft();
+            MoveDown();
         }
     }
     void CheckWhereToGo()
     {
-        if (pos.x < leftLimit)
-            shouldGoRight = true;
+        if (pos.y < downLimit)
+            shouldGoUp = true;
 
-        else if (pos.x > rightLimit)
-            shouldGoRight = false;
+        else if (pos.y > upLimit)
+            shouldGoUp = false;
 
         //if (((shouldGoRight) && (localScale.x < 0)) || ((!shouldGoRight) && (localScale.x > 0)))
         //localScale.x *= -1;
@@ -48,16 +48,17 @@ public class Enemy2 : MonoBehaviour
 
     }
 
-    void MoveRight()
+    void MoveUp()
     {
-        pos += Vector3.right * Time.deltaTime * EnemySpeedController.leftrightspeed;
+        pos += Vector3.up * Time.deltaTime * EnemySpeedController.leftrightspeed;
         transform.position = pos;
     }
 
-    void MoveLeft()
+    void MoveDown()
     {
-        pos -= Vector3.right * Time.deltaTime * EnemySpeedController.leftrightspeed;
+        pos -= Vector3.up * Time.deltaTime * EnemySpeedController.leftrightspeed;
         transform.position = pos;
     }
 
 }
+

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class UpdateLife : MonoBehaviour
 {
+
+
     private void Start()
     {
         EventBroker.updateLifeInUi += IsHit;
@@ -12,7 +14,23 @@ public class UpdateLife : MonoBehaviour
 
     void IsHit(int life)
     {
-        GetComponent<Text>().text = life.ToString();
+        ManageLifes(life);
+    }
+
+    void ManageLifes(int life)
+    {
+        if(life < 3)
+        {
+            transform.GetChild(0).GetComponent<Live>().SetOff();
+        }
+        if(life < 2)
+        {
+            transform.GetChild(1).GetComponent<Live>().SetOff();
+        }
+        if(life < 1)
+        {
+            transform.GetChild(2).GetComponent<Live>().SetOff();
+        } 
     }
 
     private void OnDestroy()

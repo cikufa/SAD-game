@@ -8,13 +8,17 @@ public class EnemySpeedController : MonoBehaviour
 
     public static float leftrightspeed = 5f;
     public static float downrotatorspeed = 1f;
-    public static float rotatespeed = 1f;
+    public static float rotatespeed = 100f;
     public static float uprotatespeed = 1f;
     public static float leftrotatespeed = 1f;
 
     public static float time = 1f;
 
     private bool once = true;
+
+
+    [Space]
+    public float slowDuration = 5;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -31,7 +35,7 @@ public class EnemySpeedController : MonoBehaviour
 
                 once = false;
                 gameObject.SetActive(false);
-                Invoke("ReturnToNormalSpeed", 5f);
+                Invoke("ReturnToNormalSpeed", slowDuration);
 
             }
 

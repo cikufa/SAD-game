@@ -32,6 +32,11 @@ public class CheckPointManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        EventBroker.RetryLevel += RespawnPlayer;
+    }
+
     public void CheckPointIsTriggered(int childCount, CheckPoint checkPoint)
     {
         if(childCount > currCheckpoint_number)
@@ -42,5 +47,22 @@ public class CheckPointManager : MonoBehaviour
             GameManager.Instance.SaveProgress(currCheckpoint_Position, currCheckpoint_number);
         }
         //else: its one of the previous checkpoints
+    }
+
+    void RespawnPlayer()
+    {
+        if(currCheckpoint_number != -1)     //player has reached some checkpoint
+        {
+            playerRef.transform.position = transform.GetChild(currCheckpoint_number).position;
+        }
+        else
+        {
+            playerRef.transform.position = startingPoint.position;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        EventBroker.RetryLevel -= RespawnPlayer;
     }
 }
