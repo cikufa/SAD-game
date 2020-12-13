@@ -11,7 +11,8 @@ public class PlayerController : MonoBehaviour
 
     [HideInInspector]
     public int life = 3;
-
+    [HideInInspector]
+    public bool hasLost = false;
 
     #region private fields
     Rigidbody2D rb;
@@ -22,7 +23,7 @@ public class PlayerController : MonoBehaviour
     float MaxDistance = 0;
     bool isDragging = false;
     Animator animator;
-    bool hasLost = false;
+    
     #endregion
 
     private void Awake()

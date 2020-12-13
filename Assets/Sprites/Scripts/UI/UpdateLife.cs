@@ -7,7 +7,7 @@ public class UpdateLife : MonoBehaviour
 {
 
 
-    private void Start()
+    private void Awake()
     {
         EventBroker.updateLifeInUi += IsHit;
     }
@@ -19,6 +19,7 @@ public class UpdateLife : MonoBehaviour
 
     void ManageLifes(int life)
     {
+        Debug.Log(life);
         if(life >= 3)
         {
             for (int i = 0; i < transform.childCount; i++)

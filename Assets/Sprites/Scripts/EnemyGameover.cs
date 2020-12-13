@@ -15,6 +15,8 @@ public class EnemyGameover : MonoBehaviour
             EventBroker.CallUpdateLifeInUi(other.transform.GetComponent<PlayerController>().life);
             if (other.transform.GetComponent<PlayerController>().life == 0)
             {
+                //Destroy(other.gameObject);
+                other.gameObject.SetActive(false);
                 EventBroker.CallGameOver();
                 //GameManager.Instance.TogglePause();
             }

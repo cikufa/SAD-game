@@ -57,16 +57,22 @@ public class CheckPointManager : MonoBehaviour
        
         if (currCheckpoint_number != -1)     //player has reached some checkpoint
         {
-            playerRef.transform.position = transform.GetChild(currCheckpoint_number).position;
+            //playerRef = Instantiate(Player, transform.GetChild(currCheckpoint_number).position, Quaternion.identity).GetComponent<PlayerController>();
+            playerRef.gameObject.SetActive(true);
             playerRef.life = PlayerPrefs.GetInt("Lives");
             EventBroker.CallUpdateLifeInUi(playerRef.life);
+            playerRef.transform.position = transform.GetChild(currCheckpoint_number).position;
+            playerRef.hasLost = false;
 
         }
         else
         {
+            //playerRef = Instantiate(Player, startingPoint.position, Quaternion.identity).GetComponent<PlayerController>();
+            playerRef.gameObject.SetActive(true);
             playerRef.life = 3;
             EventBroker.CallUpdateLifeInUi(playerRef.life);
             playerRef.transform.position = startingPoint.position;
+            playerRef.hasLost = false;
         }
     }
 

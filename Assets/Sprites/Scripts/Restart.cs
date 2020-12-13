@@ -5,7 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
-    public void OnClickRestart()
+    public void OnClickRestartLevel()
+    {
+        //GameManager.Instance.TogglePause();
+        //EventBroker.CallRetryLevel();
+        transform.parent.gameObject.SetActive(false);
+        GameManager.Instance.ReplayLevel();
+    }
+
+    public void OnClickLoadCheckpoint()
     {
         //GameManager.Instance.TogglePause();
         EventBroker.CallRetryLevel();

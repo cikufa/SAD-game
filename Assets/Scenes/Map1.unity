@@ -4684,6 +4684,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: gameover
       objectReference: {fileID: 0}
+    - target: {fileID: 2399961631928175776, guid: 65b2e382ac3353b40b3449ba5a550d2b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2399961631928175779, guid: 65b2e382ac3353b40b3449ba5a550d2b,
         type: 3}
       propertyPath: m_LocalPosition.x
