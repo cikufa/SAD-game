@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class EnemyGameover : MonoBehaviour
 {
-    public GameObject canvasObject;
-    public GameObject gameStatus;
 
     void OnCollisionEnter2D(Collision2D other)
     {

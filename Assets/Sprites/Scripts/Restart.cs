@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
+    public GameObject gameOverPanel;
+
     public void OnClickRestartLevel()
     {
         //GameManager.Instance.TogglePause();
         //EventBroker.CallRetryLevel();
         PlayerPrefs.SetString("checkpointIsValid", "false");
-        transform.parent.gameObject.SetActive(false);
+        gameOverPanel.SetActive(false);
         GameManager.Instance.ReplayLevel();
     }
 
@@ -18,6 +20,6 @@ public class Restart : MonoBehaviour
     {
         //GameManager.Instance.TogglePause();
         EventBroker.CallRetryLevel();
-        transform.parent.gameObject.SetActive(false);
+        gameOverPanel.SetActive(false);
     }
 }
