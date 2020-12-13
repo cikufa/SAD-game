@@ -1765,6 +1765,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8913362785635658371, guid: 136f56200998cf246a2cec09eb69afa6,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9033909
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913362785635658371, guid: 136f56200998cf246a2cec09eb69afa6,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913362785635658371, guid: 136f56200998cf246a2cec09eb69afa6,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9163041
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 136f56200998cf246a2cec09eb69afa6, type: 3}
 --- !u!1001 &409950348
@@ -22579,7 +22594,7 @@ PrefabInstance:
     - target: {fileID: 8053128262203732867, guid: e21c67724ba627545816ce36479ce14f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8053128262203732876, guid: e21c67724ba627545816ce36479ce14f,
         type: 3}
@@ -24488,7 +24503,7 @@ PrefabInstance:
     - target: {fileID: 5899800565326929746, guid: 7fe4ff19d1a745145b8bd8dba41c8e65,
         type: 3}
       propertyPath: m_TagString
-      value: enemy
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5899800566751018661, guid: 7fe4ff19d1a745145b8bd8dba41c8e65,
         type: 3}

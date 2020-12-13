@@ -7,7 +7,6 @@ TagManager:
   - lost
   - won
   - shieldItem
-  - enemy
   layers:
   - Default
   - TransparentFX
