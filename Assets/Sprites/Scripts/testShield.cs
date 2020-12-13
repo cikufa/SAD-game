@@ -9,7 +9,7 @@ public class testShield : MonoBehaviour
     public static bool shieldactive;
     private SpriteRenderer SR;
     public GameObject shield;
-    public static float shieldTime=5;
+    public static float shieldTime=18;
     
     // Start is called before the first frame update
     void Start()

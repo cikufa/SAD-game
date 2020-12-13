@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 8229226345757718969}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.62, y: -0.17, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 2.5}
+  m_LocalScale: {x: 4.5, y: 4.5, z: 2.5}
   m_Children:
   - {fileID: 8229226346253377433}
   m_Father: {fileID: 0}
@@ -203,7 +203,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 1.5772992
-  m_PointLightOuterRadius: 3
+  m_PointLightOuterRadius: 4
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -229,9 +229,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000015718526, y: 0}
+  m_Offset: {x: 0.011312151, y: 0.0019485435}
   serializedVersion: 2
-  m_Radius: 0.51752955
+  m_Radius: 0.577786
 --- !u!114 &8229226346253377438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,5 +244,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8c1c8fdfd3a6e40bfc8b5cdbe57eef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasObject: {fileID: 0}
-  gameStatus: {fileID: 0}

@@ -49,7 +49,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.9786186, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.96567404, b: 0, a: 1}
   m_Intensity: 3
   m_LightVolumeOpacity: 0.1
   m_ApplyToSortingLayers: 00000000
@@ -61,8 +61,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 1.5772992
-  m_PointLightOuterRadius: 3
+  m_PointLightInnerRadius: 1.7
+  m_PointLightOuterRadius: 3.3
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -103,8 +103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8c1c8fdfd3a6e40bfc8b5cdbe57eef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasObject: {fileID: 0}
-  gameStatus: {fileID: 0}
 --- !u!114 &8082281552899056860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 8082281554355139558}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.5, y: -18, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 2.5}
+  m_LocalScale: {x: 4, y: 4, z: 2.5}
   m_Children:
   - {fileID: 8082281552899056861}
   m_Father: {fileID: 0}

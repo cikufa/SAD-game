@@ -68,7 +68,7 @@ public class shield : MonoBehaviour
      void pop()
      {
          bubblepop.SetBool("pop", true);
-         Invoke("byeBubble", 1.1f);
+         Invoke("byeBubble",1.1f);
          
      }
      void byeBubble()
