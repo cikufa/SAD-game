@@ -27,10 +27,11 @@ public class testShield : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("heyhey");
         if (other.gameObject.tag == "shieldItem")
         {
             Debug.Log("shields on");
-            //other.GetComponent<Renderer>().enabled = false;
+           
             
             shieldactive = true;
             other.transform.position = transform.position;
@@ -48,9 +49,7 @@ public class testShield : MonoBehaviour
     }
     public void bubblePop()
     {
-        //anim bubble pop
-        //bubblepop.SetBool("pop", true);       
-        //shield.gameObject.SetActive(false);
+       
         SR.sortingLayerName = "default";
         shieldactive = false;
 

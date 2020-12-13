@@ -5,17 +5,20 @@ using UnityEngine;
 public class Key : MonoBehaviour
 {
     public GameObject[] lights;
-    public GameObject itself;
+    
     private Light child;
     private bool what = true;
     public float time = 5f;
+  
+
     //public float sec = 1f;
     //private Light child;
-    void Start()
+    /*void Start()
     {
-        StartCoroutine(DoEveryFelanSeconds());
+        
+      //  StartCoroutine(DoEveryFelanSeconds());
     }
-   /* void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
@@ -50,10 +53,12 @@ public class Key : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
        {
-         if (other.gameObject.tag == "Player")
+           Debug.Log("hey");
+          if (other.gameObject.tag == "Player" )
           {
-           GetComponent<Renderer>().enabled = false ;
-           what = false;
+              
+              gameObject.SetActive(false);
+              what = false;
           }
        }
   /*  void Update()
@@ -72,6 +77,7 @@ public class Key : MonoBehaviour
         }
     }
   */
+   /*
     IEnumerator DoEveryFelanSeconds()
     {
         while (true)
@@ -106,5 +112,6 @@ public class Key : MonoBehaviour
             }
         }
     }
+    * */
 }
     

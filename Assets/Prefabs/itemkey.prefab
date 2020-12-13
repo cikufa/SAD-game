@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2465954895628742250}
   - component: {fileID: 2465954895628742249}
   - component: {fileID: 5372965391229344698}
+  - component: {fileID: 8274826667537827439}
   m_Layer: 0
   m_Name: itemkey
   m_TagString: Untagged
@@ -27,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2465954895628742248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0993356, y: -3.0324073, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 1.0993356, y: -3.095, z: 0}
+  m_LocalScale: {x: 5, y: 5.3462286, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 566e9ab9b68a6334a864fcd1c3f72045, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c0c66cf73b9ca464cba89ef1a08fb56d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -115,5 +116,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lights: []
-  itself: {fileID: 2465954895628742248}
   time: 5
+--- !u!65 &8274826667537827439
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2465954895628742248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.27853677, y: 0.30870903, z: 0.2}
+  m_Center: {x: 0.016203595, y: 0.025645563, z: 0}

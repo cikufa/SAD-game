@@ -54,7 +54,8 @@ public class shield : MonoBehaviour
      }
      void OnTriggerEnter2D(Collider2D other)
      {
-         if (other.tag != "plyer")
+         Debug.Log("sh");
+         if (other.tag != "player")
          {
              //pop
              
