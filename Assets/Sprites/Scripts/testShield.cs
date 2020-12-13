@@ -14,43 +14,24 @@ public class testShield : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SR = GetComponent<SpriteRenderer>();
-       // bubblepop = shield.GetComponent<Animator>();
+        SR = GetComponent<SpriteRenderer>();      
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-         
-
-        
-    }
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("skhsd");
         if (other.gameObject.tag == "shieldItem")
         {
-            Debug.Log("shields on");
-            //other.GetComponent<Renderer>().enabled = false;
-            
+            Debug.Log("shields on"); 
             shieldactive = true;
             other.transform.position = transform.position;
             other.transform.parent = transform;
             SR.sortingLayerName = "ignore light";
-            /*while (Time.deltaTime < 10)
-            {
-                Debug.Log(Time.deltaTime);
-            }
-             * */
             Invoke("bubblePop", shieldTime);
-
         }
-
     }
     public void bubblePop()
-    {
-        //anim bubble pop
-        //bubblepop.SetBool("pop", true);       
-        //shield.gameObject.SetActive(false);
+    {  
         SR.sortingLayerName = "default";
         shieldactive = false;
 
