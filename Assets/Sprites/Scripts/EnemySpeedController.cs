@@ -7,10 +7,10 @@ public class EnemySpeedController : MonoBehaviour
     // Start is called before the first frame update
 
     public static float leftrightspeed = 5f;
-    public static float downrotatorspeed = 1f;
+    public static float downrotatorspeed = 80f;
     public static float rotatespeed = 100f;
-    public static float uprotatespeed = 1f;
-    public static float leftrotatespeed = 1f;
+    public static float uprotatespeed = 80f;
+    public static float leftrotatespeed = 80f;
 
     public static float time = 1f;
 
