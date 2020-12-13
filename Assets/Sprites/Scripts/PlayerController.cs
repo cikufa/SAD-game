@@ -66,12 +66,16 @@ public class PlayerController : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         animator.SetTrigger("EndAnimation");
+        animator.ResetTrigger("clickOFF");
+        animator.ResetTrigger("clickON");
     }
 
     public void StartAim(Vector2 pos)
     {
         start = mainCam.ScreenToWorldPoint(pos);
         animator.SetTrigger("clickON");
+        animator.ResetTrigger("clickOFF");
+        animator.ResetTrigger("EndAnimation");
     }
 
     public void EndAim(Vector2 pos)
@@ -85,6 +89,8 @@ public class PlayerController : MonoBehaviour
         rb.AddForce(dir * forceAmount * forceConstant);
 
         animator.SetTrigger("clickOFF");
+        animator.ResetTrigger("clickON");
+        animator.ResetTrigger("EndAnimation");
         isDragging = false;
 
         StartCoroutine("CheckVelocity");
