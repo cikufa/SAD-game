@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa72c697e2e6c36479e88c5f3f08b3bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightLimit: 0
-  leftLimit: -15
+  rightLimit: 30
+  leftLimit: 16
   enemy2animator: {fileID: 5131976638711207619}
   shouldGoRight: 1
 --- !u!60 &5131976638711207622
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0.02745098, b: 0, a: 1}
   m_Intensity: 3
   m_LightVolumeOpacity: 0.103
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 0000000069376b9a
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -312,5 +312,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8c1c8fdfd3a6e40bfc8b5cdbe57eef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasObject: {fileID: 0}
-  gameStatus: {fileID: 0}

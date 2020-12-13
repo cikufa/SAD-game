@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0.02745098, b: 0, a: 1}
   m_Intensity: 3
   m_LightVolumeOpacity: 0.1
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 0000000069376b9a
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 1
@@ -102,8 +102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8c1c8fdfd3a6e40bfc8b5cdbe57eef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasObject: {fileID: 0}
-  gameStatus: {fileID: 0}
 --- !u!1 &5163660065222312694
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itslight: {fileID: 5163660064969418581}
   intensity: 3
-  sight: 10
+  sight: 5
 --- !u!60 &5163660065222312691
 PolygonCollider2D:
   m_ObjectHideFlags: 0
