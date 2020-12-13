@@ -19,18 +19,36 @@ public class UpdateLife : MonoBehaviour
 
     void ManageLifes(int life)
     {
-        if(life < 3)
+        if(life >= 3)
+        {
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                transform.GetChild(i).GetComponent<Live>().SetOn();
+            }
+        }
+
+        if(life == 2)
         {
             transform.GetChild(0).GetComponent<Live>().SetOff();
+            transform.GetChild(1).GetComponent<Live>().SetOn();
+            transform.GetChild(2).GetComponent<Live>().SetOn();
+
         }
-        if(life < 2)
+
+        if(life == 1)
         {
+            transform.GetChild(0).GetComponent<Live>().SetOff();
             transform.GetChild(1).GetComponent<Live>().SetOff();
+            transform.GetChild(2).GetComponent<Live>().SetOn();
         }
-        if(life < 1)
+
+        if(life <= 0)
         {
-            transform.GetChild(2).GetComponent<Live>().SetOff();
-        } 
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                transform.GetChild(i).GetComponent<Live>().SetOff();
+            }
+        }
     }
 
     private void OnDestroy()

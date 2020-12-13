@@ -6,12 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/nastarancopy.unity
-    guid: 4f3a5d04aab536a4991c5bec9d383d76
-  - enabled: 1
-    path: Assets/Scenes/Fatemeh.unity
-    guid: 05964a4ab87277148994973d0ab80a04
+    path: Assets/Scenes/boot.unity
+    guid: ba84eebecc180754381ed6f45b16e02a
   - enabled: 1
     path: Assets/Scenes/levelcompletion.unity
     guid: ff82625ea2c74bb479d7f91745528359
+  - enabled: 1
+    path: Assets/Scenes/Map1.unity
+    guid: fe4a3fdf37690044793c634785a1d9dd
+  - enabled: 1
+    path: Assets/Scenes/Map2.unity
+    guid: fab2fe2fc307353439f62cd83481fc3a
   m_configObjects: {}

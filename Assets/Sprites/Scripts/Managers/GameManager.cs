@@ -43,7 +43,7 @@ public class GameManager : Singleton<GameManager>
             mapNumber = PlayerPrefs.GetInt("Map");
         }
 
-        LoadLevel(mapNumber.ToString());
+        LoadLevel("Map"+mapNumber.ToString());
         UpdateState(GameState.PLAYING);
 
 
@@ -154,12 +154,13 @@ public class GameManager : Singleton<GameManager>
         PlayerPrefs.SetInt("Map", mapNumber);
     }
 
-    public void SaveProgress(Vector2 checkPointPos,int checkPointNum)
+    public void SaveProgress(Vector2 checkPointPos,int checkPointNum, int lives)
     {
         PlayerPrefs.SetString("checkpointIsValid", "true");
         PlayerPrefs.SetInt("CheckPointNum", checkPointNum);     //child number of checkpoint
         PlayerPrefs.SetFloat("CheckPointX", checkPointPos.x);
         PlayerPrefs.SetFloat("CheckPointY", checkPointPos.y);
+        PlayerPrefs.SetInt("Lives", lives);
     }
 
 }

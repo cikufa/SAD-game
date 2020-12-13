@@ -37,7 +37,6 @@ public class Invisible : MonoBehaviour
         {
             itslight.intensity = 0;
             GetComponent<Renderer>().enabled = false ;
-            Debug.Log("I");
             //itsLight.enable = false;
             //light.light.enabled=false;
             //Debug.Log("123");

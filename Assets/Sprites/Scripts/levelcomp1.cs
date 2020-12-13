@@ -18,8 +18,11 @@ public class levelcomp1 : MonoBehaviour
     //public GameObject colorLight2;
     UnityEngine.Experimental.Rendering.Universal.Light2D light1;
     //UnityEngine.Experimental.Rendering.Universal.Light2D light2;
-    private int onetime, onetime2; 
-    // Start is called before the first frame update
+    private int onetime, onetime2;
+
+    [Space]
+    public GameObject button;
+
     void Start()
     {
 
@@ -88,8 +91,8 @@ public class levelcomp1 : MonoBehaviour
             }
             
         }
-        
 
+        button.SetActive(true);
 
     }
 }

@@ -15,7 +15,7 @@ public class gameover : MonoBehaviour
             if (other.GetComponent<PlayerController>().life == 0)
             {
                 EventBroker.CallGameOver();
-                GameManager.Instance.TogglePause();                
+                //GameManager.Instance.TogglePause();                
             }            
         }
 

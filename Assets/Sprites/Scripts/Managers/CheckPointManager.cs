@@ -21,10 +21,12 @@ public class CheckPointManager : MonoBehaviour
             currCheckpoint_number = PlayerPrefs.GetInt("CheckPointNum");
             currCheckPoint = transform.GetChild(currCheckpoint_number).GetComponent<CheckPoint>();
             currCheckpoint_Position.x = PlayerPrefs.GetFloat("CheckPointX");
-            currCheckpoint_Position.y = PlayerPrefs.GetFloat("CheckPointY");            
+            currCheckpoint_Position.y = PlayerPrefs.GetFloat("CheckPointY");                 
 
 
-            playerRef = Instantiate(Player, currCheckpoint_Position, Quaternion.identity).GetComponent<PlayerController>();
+            playerRef = Instantiate(Player, currCheckPoint.transform.position, Quaternion.identity).GetComponent<PlayerController>();
+            playerRef.life = PlayerPrefs.GetInt("Lives");
+            EventBroker.CallUpdateLifeInUi(playerRef.life);
         }
         else
         {
@@ -44,19 +46,26 @@ public class CheckPointManager : MonoBehaviour
             currCheckPoint = checkPoint;
             currCheckpoint_number = childCount;
             currCheckpoint_Position = new Vector2(checkPoint.transform.position.x, checkPoint.transform.position.y);
-            GameManager.Instance.SaveProgress(currCheckpoint_Position, currCheckpoint_number);
+            GameManager.Instance.SaveProgress(currCheckpoint_Position, currCheckpoint_number, playerRef.life);
+
         }
         //else: its one of the previous checkpoints
     }
 
     void RespawnPlayer()
     {
-        if(currCheckpoint_number != -1)     //player has reached some checkpoint
+       
+        if (currCheckpoint_number != -1)     //player has reached some checkpoint
         {
             playerRef.transform.position = transform.GetChild(currCheckpoint_number).position;
+            playerRef.life = PlayerPrefs.GetInt("Lives");
+            EventBroker.CallUpdateLifeInUi(playerRef.life);
+
         }
         else
         {
+            playerRef.life = 3;
+            EventBroker.CallUpdateLifeInUi(playerRef.life);
             playerRef.transform.position = startingPoint.position;
         }
     }

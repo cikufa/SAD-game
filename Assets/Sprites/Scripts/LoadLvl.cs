@@ -10,7 +10,7 @@ public class LoadLvl : MonoBehaviour
     {
         GameManager.Instance.mapNumber++;
         PlayerPrefs.SetString("checkpointIsValid", "false");
-        mapNumberToLoad = GameManager.Instance.mapNumber >= 3 ? string.Empty : GameManager.Instance.mapNumber .ToString();
+        mapNumberToLoad = GameManager.Instance.mapNumber >= 3 ? string.Empty : "Map"+GameManager.Instance.mapNumber .ToString();
 
         GameManager.Instance.SaveProgress();
     }

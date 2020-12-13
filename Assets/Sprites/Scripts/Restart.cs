@@ -7,6 +7,8 @@ public class Restart : MonoBehaviour
 {
     public void OnClickRestart()
     {
+        //GameManager.Instance.TogglePause();
         EventBroker.CallRetryLevel();
+        transform.parent.gameObject.SetActive(false);
     }
 }
