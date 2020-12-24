@@ -6,24 +6,25 @@ using UnityEngine.AI;
 public class shield : MonoBehaviour
 {
    
-     public float speed;
-     private int c = 2001;
-     private int k = 1;
+     //public float speed;
+     //private int c = 2001;
+     //private int k = 1;
      public Animator bubblepop;
     
      // Start is called before the first frame update
-     void Start()
+    /* 
+    void Start()
      {
-         //c = 11;
-         //SR = GetComponent<SpriteRenderer>();
+         c = 11;
+         SR = GetComponent<SpriteRenderer>();
      }
 
      // Update is called once per frame
      void Update()
      {
-        // var randDir = Random.Range(1, 5);
-         /*var randDir = Random.Range(1, 5);
-         //random move
+         var randDir = Random.Range(1, 5);
+         var randDir = Random.Range(1, 5);
+         random move
          if (randDir == 4)
          {
               gameObject.transform.Translate(-Vector2.right * speed * Time.deltaTime);
@@ -49,22 +50,16 @@ public class shield : MonoBehaviour
              gameObject.transform.Translate(-Vector2.up * speed * Time.deltaTime);
              c++;
          }
-         */
-
      }
+    */
      void OnTriggerEnter2D(Collider2D other)
      {
-         Debug.Log("sh");
+         
          if (other.tag != "player")
-         {
-             //pop
-             
-             Invoke("pop", testShield.shieldTime);
-             //gameObject.SetActive(false);
-            
+         {    
+             Invoke("pop", testShield.shieldTime);     
          }
      }
-
 
      void pop()
      {
