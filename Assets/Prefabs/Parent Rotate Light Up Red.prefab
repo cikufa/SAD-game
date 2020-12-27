@@ -210,7 +210,7 @@ Transform:
   m_GameObject: {fileID: 2919195036774848559}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 17.47, y: -10.16, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 0}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 0}
   m_Children:
   - {fileID: 2919195035663395166}
   m_Father: {fileID: 0}
@@ -317,8 +317,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d4ef61486eb22489350715143bb2d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasObject: {fileID: 0}
-  gameStatus: {fileID: 0}
 --- !u!95 &2919195036774848556
 Animator:
   serializedVersion: 3
