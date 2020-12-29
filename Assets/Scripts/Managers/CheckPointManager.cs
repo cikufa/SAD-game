@@ -1,9 +1,17 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class CheckPointManager : MonoBehaviour
 {
     public GameObject Player;
     public Transform startingPoint;
+
+    //public Transform itemsParent;
+    public List<Transform> items;
+    Dictionary<GameObject, Transform> itemsDictionary;
+    public Transform newItemsForCheckpoint;
+
 
     [Space]
     public CheckPoint currCheckPoint;
@@ -37,6 +45,14 @@ public class CheckPointManager : MonoBehaviour
     private void Start()
     {
         EventBroker.RetryLevel += RespawnPlayer;
+        itemsDictionary = new Dictionary<GameObject, Transform>();
+        for (int i = 0; i < items.Count; i++)
+        {
+            GameObject g = Instantiate(items[i].gameObject, items[i].transform.position, Quaternion.identity, newItemsForCheckpoint);
+            g.SetActive(false);
+            itemsDictionary.Add(g, g.transform);
+            Debug.Log(g.name);
+        }
     }
 
     public void CheckPointIsTriggered(int childCount, CheckPoint checkPoint)
@@ -63,6 +79,7 @@ public class CheckPointManager : MonoBehaviour
             EventBroker.CallUpdateLifeInUi(playerRef.life);
             playerRef.transform.position = transform.GetChild(currCheckpoint_number).position;
             playerRef.hasLost = false;
+            RespawnItems();
 
         }
         else
@@ -74,6 +91,28 @@ public class CheckPointManager : MonoBehaviour
             playerRef.transform.position = startingPoint.position;
             playerRef.hasLost = false;
         }
+    }
+
+    void RespawnItems()
+    {
+        int i = 0;
+        foreach (GameObject item in itemsDictionary.Keys)
+        {
+            if (!items[i].gameObject.activeSelf )
+            {
+                items[i] = Instantiate(item, itemsDictionary[item].position, Quaternion.identity).transform;
+                items[i].gameObject.SetActive(true);
+            }
+            i++;
+        }
+
+        //for (int i = 0; i < itemsParent.childCount; i++)
+        //{
+        //    if (!itemsParent.GetChild(i).gameObject.activeSelf)
+        //    {
+        //        itemsParent.GetChild(i).gameObject.SetActive(true);
+        //    }
+        //}
     }
 
     private void OnDestroy()

@@ -8,7 +8,6 @@ public class gameover : MonoBehaviour
     float startTime = 1000;
     void Update()
     {
-        Debug.Log("in update:");
         //Debug.Log(Time.deltaTime);
 
         if (Time.time > startTime + 5)
