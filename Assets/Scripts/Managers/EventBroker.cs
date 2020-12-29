@@ -2,7 +2,7 @@
 
 public class EventBroker
 {
-    public static Action GameOver,win, RetryLevel,explode;
+    public static Action GameOver, RetryLevel,explode;
     public static Action<int> updateLifeInUi;
 
     public static void CallGameOver()
@@ -10,10 +10,10 @@ public class EventBroker
         GameOver?.Invoke();
     }
 
-    public static void CallWin()
-    {
-        win?.Invoke();
-    }
+    //public static void CallWin()
+    //{
+    //    win?.Invoke();
+    //}
 
     public static void CallUpdateLifeInUi(int life)
     {

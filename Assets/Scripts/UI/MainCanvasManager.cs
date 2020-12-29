@@ -10,7 +10,7 @@ public class MainCanvasManager : MonoBehaviour
     private void Start()
     {
         EventBroker.GameOver += GameOver;
-        EventBroker.win += Win;
+        //EventBroker.win += Win;
     }
 
     void GameOver()
@@ -18,14 +18,14 @@ public class MainCanvasManager : MonoBehaviour
         gameOver.SetActive(true);
     }
 
-    void Win()
-    {
-        win.SetActive(true);
-    }
+    //void Win()
+    //{
+    //    win.SetActive(true);
+    //}
 
     private void OnDestroy()
     {
         EventBroker.GameOver -= GameOver;
-        EventBroker.win -= Win;
+        //EventBroker.win -= Win;
     }
 }
