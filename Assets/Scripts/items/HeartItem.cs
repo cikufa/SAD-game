@@ -10,7 +10,8 @@ public class HeartItem : MonoBehaviour
         {
             collision.GetComponent<PlayerController>().life++;
             EventBroker.CallUpdateLifeInUi(collision.GetComponent<PlayerController>().life);
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
         }
     }
 }

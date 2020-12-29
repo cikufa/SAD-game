@@ -20,11 +20,13 @@ public class EnemySpeedController : MonoBehaviour
     [Space]
     public float slowDuration = 5;
 
+
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
-            if (once)
+            //if (once)
             {
                 leftrightspeed /= 2;
                 downrotatorspeed /= 2;
@@ -33,10 +35,10 @@ public class EnemySpeedController : MonoBehaviour
                 leftrotatespeed /= 2;
                 time *= 2;
 
-                once = false;
+                //once = false;
                 gameObject.SetActive(false);
                 Invoke("ReturnToNormalSpeed", slowDuration);
-
+                
             }
 
         }
@@ -52,16 +54,34 @@ public class EnemySpeedController : MonoBehaviour
         uprotatespeed *= 2;
         leftrotatespeed *= 2;
         time /= 2;
-        Destroy(gameObject, 1f);
+        //Destroy(gameObject, 1f);
     }
     void Start()
     {
-
+        EventBroker.RetryLevel += RespawnPlayer;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDestroy()
     {
+        EventBroker.RetryLevel -= RespawnPlayer;
+    }
+
+    void RespawnPlayer()
+    {
+        if (IsInvoking())
+        {
+            Debug.Log("Invoke Canceled");
+
+            CancelInvoke();
+
+            leftrightspeed *= 2;
+            downrotatorspeed *= 2;
+            rotatespeed *= 2;
+            uprotatespeed *= 2;
+            leftrotatespeed *= 2;
+            time /= 2;
+        }
+        
 
     }
 }
