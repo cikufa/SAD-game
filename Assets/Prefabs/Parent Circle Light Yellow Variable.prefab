@@ -48,8 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.96567404, b: 0, a: 1}
+  m_FalloffIntensity: 0.56
+  m_Color: {r: 0.9254902, g: 0.76862746, b: 0.16078432, a: 1}
   m_Intensity: 3
   m_LightVolumeOpacity: 0.1
   m_ApplyToSortingLayers: 00000000
@@ -62,7 +62,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 1.7
-  m_PointLightOuterRadius: 3.3
+  m_PointLightOuterRadius: 3.6
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -88,9 +88,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000015718526, y: 0}
+  m_Offset: {x: -0.0021058738, y: 0}
   serializedVersion: 2
-  m_Radius: 0.51752955
+  m_Radius: 0.4809764
 --- !u!114 &8082281552899056863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 8082281554355139558}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.5, y: -18, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 2.5}
+  m_LocalScale: {x: 5, y: 5, z: 2.5}
   m_Children:
   - {fileID: 8082281552899056861}
   m_Father: {fileID: 0}
