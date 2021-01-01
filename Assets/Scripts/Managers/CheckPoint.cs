@@ -10,6 +10,7 @@ public class CheckPoint : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             GetComponentInParent<CheckPointManager>().CheckPointIsTriggered(transform.GetSiblingIndex(), this);
+            transform.GetChild(0).GetComponent<Animator>().enabled = false;
         }
     }
 }

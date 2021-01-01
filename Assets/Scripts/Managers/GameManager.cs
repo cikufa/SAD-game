@@ -37,19 +37,24 @@ public class GameManager : Singleton<GameManager>
 
         InstantiateSystemprefabs();
 
+        LoadLevel("Menu");
+        UpdateState(GameState.PREGAME);
+    }
+
+    public void OnContinueButtonClickedInMenu()
+    {
         //LoadData
         if (PlayerPrefs.HasKey("Map"))
         {
             mapNumber = PlayerPrefs.GetInt("Map");
+            LoadLevel("Map" + mapNumber.ToString());
         }
-
-        LoadLevel("Map"+mapNumber.ToString());
+        else
+        {
+            LoadLevel("Map1");
+        }
+        
         UpdateState(GameState.PLAYING);
-
-
-        
-        
-        
     }
 
     public void LoadLevel(string levelName)
