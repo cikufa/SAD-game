@@ -13,7 +13,7 @@ public class gameover : MonoBehaviour
         if (Time.time > startTime + 5)
         {
             startTime = Time.time;
-            Debug.Log("timeout");
+            //Debug.Log("timeout");
            // this.GetComponent<Collider2D>().isTrigger = false;
            // this.GetComponent<Collider2D>().isTrigger = true;
             player = GameObject.FindWithTag("Player");

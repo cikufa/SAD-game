@@ -47,10 +47,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 0.9786186, g: 1, b: 0, a: 1}
-  m_Intensity: 3
-  m_LightVolumeOpacity: 0.1
+  m_FalloffIntensity: 0.784
+  m_Color: {r: 0.9245283, g: 0.7671891, b: 0.16135636, a: 1}
+  m_Intensity: 2
+  m_LightVolumeOpacity: 0.192
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
@@ -60,8 +60,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 1.5772992
-  m_PointLightOuterRadius: 3
+  m_PointLightInnerRadius: 1.3
+  m_PointLightOuterRadius: 4.5
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -87,9 +87,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000015718526, y: 0}
+  m_Offset: {x: -0.00000037724462, y: 0}
   serializedVersion: 2
-  m_Radius: 0.51752955
+  m_Radius: 0.39038837
 --- !u!114 &3825865424566924454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +131,7 @@ Transform:
   m_GameObject: {fileID: 3825865425065032729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 28.5, y: -8, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 2.5}
+  m_LocalScale: {x: 5, y: 5, z: 2.5}
   m_Children:
   - {fileID: 3825865424566924452}
   m_Father: {fileID: 0}
@@ -173,11 +173,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1131687449
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 6abe63dab72abfc4a80923c92d01726a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itslight: {fileID: 3825865424566924455}
   intensity: 3
-  sight: 10
+  sight: 12.5
 --- !u!60 &3825865425065032708
 PolygonCollider2D:
   m_ObjectHideFlags: 0
