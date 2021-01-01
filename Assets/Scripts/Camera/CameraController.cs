@@ -22,5 +22,7 @@ public class CameraController : MonoBehaviour
 		Vector3 playerPosition = new Vector3(Player.position.x+5,Player.position.y,Player.position.z-2 );
 		
 		transform.position = Vector3.Lerp(camPosition, playerPosition,CamMoveSpeed * Time.deltaTime );
+		Debug.Log(transform.position);
+		Debug.Log(camPosition);
 	}
 }
