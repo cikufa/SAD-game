@@ -10,17 +10,16 @@ public class Invisible : MonoBehaviour
     public Light2D itslight;
     private GameObject player;
     float distance;
-    public float intensity = 3f;
-    public float sight = 10f;
+    public float intensity;
+    public float sight;
     private Animator animator;
     //public UnityEngine.Experimental.Rendering.LWRP.Light2D itsLight;
     void Start()
     {
         //light = Light.Find("Circle Light");
         player = GameObject.FindWithTag("Player");
-        //box = GameObject.Find("Parent Circle Light");
-        //box.gameObject.SetActive(true);
         animator = GetComponent<Animator>();
+        
     }
     void Update()
     {
@@ -28,21 +27,34 @@ public class Invisible : MonoBehaviour
         //float distance = Vector3.Distance(target.position,transform.position);
         if (distance < sight)
         {
-
+            GetComponent<Renderer>().enabled = true;
             animator.SetBool("appear", true);
-            
+          
             if (itslight.intensity < intensity)
             {
-                itslight.intensity += 0.5f;
+                itslight.intensity += 0.1f;
             }
             //itslight.intensity = intensity;
-            GetComponent<Renderer>().enabled = true;
+           
      
         }
         else if (distance > sight)
         {
-            itslight.intensity = 0;
-            GetComponent<Renderer>().enabled = false ;
+            animator.SetBool("appear", false);
+
+            if (itslight.intensity > 0)
+            {
+                itslight.intensity -= 0.05f;
+                if (itslight.intensity < 0.1)
+                {
+                    GetComponent<Renderer>().enabled = false;
+                }
+            }
+            
+
+
+       
+            
          
         }
     }
