@@ -40,6 +40,23 @@ public class GameManager : Singleton<GameManager>
         LoadLevel("Menu");
         UpdateState(GameState.PREGAME);
     }
+    /*
+    public OnLevelSelectionButtonClickedInMenu()
+    {
+        switch (levelname)
+        {
+            case level1:
+                mapNumber = 1;
+            case level2:
+                mapNumber = 2;
+            case level3:
+                mapNumber = 3;
+        }
+            LoadLevel("Map" + mapNumber.ToString());
+        }
+    */
+    
+
 
     public void OnContinueButtonClickedInMenu()
     {
