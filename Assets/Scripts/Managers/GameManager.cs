@@ -18,7 +18,7 @@ public class GameManager : Singleton<GameManager>
     private GameObject[] systemPrefabs;
     private List<GameObject> _instancedSystemPrefabs;
 
-    public enum GameState { PREGAME,PLAYING,PAUSED}        //PreGame: before loading a level
+    public enum GameState { PREGAME, PLAYING, PAUSED }        //PreGame: before loading a level
     private GameState currGameState = GameState.PREGAME;
     public GameState CurrGameState
     {
@@ -27,6 +27,8 @@ public class GameManager : Singleton<GameManager>
     }
 
     public int mapNumber = 1;
+    //public int levelNumber = 1;
+
 
     private void Start()
     {
@@ -55,7 +57,7 @@ public class GameManager : Singleton<GameManager>
             LoadLevel("Map" + mapNumber.ToString());
         }
     */
-    
+
 
 
     public void OnContinueButtonClickedInMenu()
@@ -70,8 +72,19 @@ public class GameManager : Singleton<GameManager>
         {
             LoadLevel("Map1");
         }
-        
+
         UpdateState(GameState.PLAYING);
+    }
+    public void OnLevelSelectedButtonClickedInMenu(int levelNumber)
+    {
+        LoadLevel("Map" + levelNumber.ToString());
+        UpdateState(GameState.PLAYING);
+    }
+
+    public void OnPlayButtonClickedInMenu()
+    {
+    LoadLevel("Map1");
+    UpdateState(GameState.PLAYING);
     }
 
     public void LoadLevel(string levelName)
