@@ -219,8 +219,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itslight: {fileID: 5163660064969418581}
-  intensity: 3
-  sight: 5
+  intensity: 5
+  sight: 12.5
 --- !u!60 &5163660065222312691
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -49,8 +49,8 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.784
   m_Color: {r: 0.9245283, g: 0.7671891, b: 0.16135636, a: 1}
-  m_Intensity: 2
-  m_LightVolumeOpacity: 0.192
+  m_Intensity: 0.2
+  m_LightVolumeOpacity: 0.15
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itslight: {fileID: 3825865424566924455}
-  intensity: 3
+  intensity: 5
   sight: 12.5
 --- !u!60 &3825865425065032708
 PolygonCollider2D:
