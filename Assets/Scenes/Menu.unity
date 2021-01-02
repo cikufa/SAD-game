@@ -195,8 +195,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -215, y: 16}
-  m_SizeDelta: {x: 136, y: 120}
+  m_AnchoredPosition: {x: -225.5, y: -0.9}
+  m_SizeDelta: {x: 119.10211, y: 92.698425}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &497649554
 MonoBehaviour:
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 46fdc61a9e183f644a9ec08ecd4b0488, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94a8649938819994eaaf7ea2f9ae3230, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -739,8 +739,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20, y: 16}
-  m_SizeDelta: {x: 136, y: 120}
+  m_AnchoredPosition: {x: 3.1, y: -0.1}
+  m_SizeDelta: {x: 108.70343, y: 93.998535}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1574385718
 MonoBehaviour:
@@ -761,7 +761,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 11784b5e4115ef847b9bb5a8e3db7da1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: da69876c2d710bc41b3c0f73ff8bcb09, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1589,7 +1589,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 692ff8b25b3429346a84dd935f8babba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0323a25d0223fd84e8905b652fb7a707, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1623,8 +1623,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 250, y: 16}
-  m_SizeDelta: {x: 136, y: 120}
+  m_AnchoredPosition: {x: 234.7, y: -1.7}
+  m_SizeDelta: {x: 111.30313, y: 91.39838}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2065410285
 GameObject:
