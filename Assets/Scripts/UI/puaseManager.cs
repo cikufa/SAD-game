@@ -31,7 +31,8 @@ public class puaseManager : MonoBehaviour
     {
         PauseCanvasPanel.SetActive(false);
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Menu");
+        GameManager.Instance.forHome();
+        //SceneManager.LoadScene("Menu");
     }
 
 }
