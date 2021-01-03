@@ -1,49 +1,40 @@
 fileFormatVersion: 2
-guid: 60f2879c93e5ade49a96ba508faa7ee5
+guid: d71389de22863f34d9b3a7cd4266fa38
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4146444334820689155
-    second: byechar2_0
+      213: 9045208880589451659
+    second: football_0
   - first:
-      213: -1462297751145547258
-    second: byechar2_1
+      213: -6328419109485337791
+    second: football_1
   - first:
-      213: 8285816491407212012
-    second: byechar2_2
+      213: 5942467529716024075
+    second: football_2
   - first:
-      213: 4944818735293852039
-    second: byechar2_3
+      213: 9173957741158652073
+    second: football_3
   - first:
-      213: 611147266466984425
-    second: byechar2_4
+      213: -3272338057121454593
+    second: football_4
   - first:
-      213: -6974473983123777277
-    second: byechar2_5
+      213: 2238309056620181779
+    second: football_5
   - first:
-      213: 6148879135871641995
-    second: byechar2_6
+      213: -2047549925808256884
+    second: football_6
   - first:
-      213: 7759173476408113653
-    second: byechar2_7
+      213: 7656548765825591513
+    second: football_7
   - first:
-      213: 4434057815904225067
-    second: byechar2_8
+      213: 5781164584341046243
+    second: football_8
   - first:
-      213: -6399646648435366329
-    second: byechar2_9
+      213: -5949300247300412832
+    second: football_9
   - first:
-      213: -2164124789900155203
-    second: byechar2_10
-  - first:
-      213: 3228689089036133451
-    second: byechar2_11
-  - first:
-      213: -7433146533172977005
-    second: byechar2_12
-  - first:
-      213: 2372205358321981332
-    second: byechar2_13
+      213: 336866432323213678
+    second: football_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -153,12 +144,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: byechar2_0
+      name: football_0
       rect:
         serializedVersion: 2
-        x: 21
+        x: 19
         y: 4
-        width: 21
+        width: 33
         height: 54
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -167,19 +158,124 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3050be957212b8930800000000000000
-      internalID: 4146444334820689155
+      spriteID: b813eb6ad89078d70800000000000000
+      internalID: 9045208880589451659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byechar2_1
+      name: football_1
       rect:
         serializedVersion: 2
-        x: 84
+        x: 81
         y: 4
-        width: 23
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143255d6950fc28a0800000000000000
+      internalID: -6328419109485337791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: football_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 4
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b034406dbb2e77250800000000000000
+      internalID: 5942467529716024075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: football_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 4
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8d43ab5f1705f70800000000000000
+      internalID: 9173957741158652073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: football_5
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 4
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319b2695a32101f10800000000000000
+      internalID: 2238309056620181779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: football_6
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 4
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88425cd034a593e0800000000000000
+      internalID: -2047549925808256884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: football_7
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 4
+        width: 33
         height: 54
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -188,19 +284,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60afd1361ffd4bbe0800000000000000
-      internalID: -1462297751145547258
+      spriteID: 9d86d705986814a60800000000000000
+      internalID: 7656548765825591513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byechar2_2
+      name: football_8
       rect:
         serializedVersion: 2
-        x: 148
+        x: 465
         y: 4
-        width: 24
+        width: 32
         height: 54
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -209,39 +305,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ced7664e2322df270800000000000000
-      internalID: 8285816491407212012
+      spriteID: 3e387bd3f82da3050800000000000000
+      internalID: 5781164584341046243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: byechar2_3
+      name: football_10
       rect:
         serializedVersion: 2
-        x: 278
-        y: 6
-        width: 19
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 789e2e3e0768f9440800000000000000
-      internalID: 4944818735293852039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: byechar2_4
-      rect:
-        serializedVersion: 2
-        x: 316
-        y: 44
+        x: 252
+        y: 12
         width: 4
         height: 4
       alignment: 0
@@ -251,197 +326,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e1373b633b3b7800800000000000000
-      internalID: 611147266466984425
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: byechar2_5
-      rect:
-        serializedVersion: 2
-        x: 342
-        y: 6
-        width: 19
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30914bc5dd0b53f90800000000000000
-      internalID: -6974473983123777277
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: byechar2_6
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 4
-        width: 23
-        height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b89a074fef4355550800000000000000
-      internalID: 6148879135871641995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: byechar2_7
-      rect:
-        serializedVersion: 2
-        x: 406
-        y: 6
-        width: 19
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f930fbba2f1eab60800000000000000
-      internalID: 7759173476408113653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: byechar2_8
-      rect:
-        serializedVersion: 2
-        x: 470
-        y: 6
-        width: 19
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2704864710f88d30800000000000000
-      internalID: 4434057815904225067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: byechar2_9
-      rect:
-        serializedVersion: 2
-        x: 534
-        y: 6
-        width: 19
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 746adffa743ef27a0800000000000000
-      internalID: -6399646648435366329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: byechar2_10
-      rect:
-        serializedVersion: 2
-        x: 598
-        y: 6
-        width: 19
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db6626838fb77f1e0800000000000000
-      internalID: -2164124789900155203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: byechar2_11
-      rect:
-        serializedVersion: 2
-        x: 662
-        y: 6
-        width: 19
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b44ad22ce9b9ecc20800000000000000
-      internalID: 3228689089036133451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: byechar2_12
-      rect:
-        serializedVersion: 2
-        x: 726
-        y: 6
-        width: 19
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3926cce4c9828d890800000000000000
-      internalID: -7433146533172977005
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: byechar2_13
-      rect:
-        serializedVersion: 2
-        x: 790
-        y: 4
-        width: 19
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4975f057434cbe020800000000000000
-      internalID: 2372205358321981332
+      spriteID: e69d0634c3acca400800000000000000
+      internalID: 336866432323213678
       vertices: []
       indices: 
       edges: []

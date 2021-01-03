@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -866,9 +866,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 3.0072021, y: -10.971367}
-      - {x: 2.6717377, y: 8.655076}
-      - {x: -0.68533325, y: 8.547416}
+    - - {x: 3.875351, y: -10.971367}
+      - {x: 4.6250763, y: 8.221004}
+      - {x: -0.14273071, y: 2.2533484}
       - {x: -0.4363842, y: -11.162634}
 --- !u!114 &216528980
 MonoBehaviour:
@@ -889,7 +889,7 @@ MonoBehaviour:
   nearlamp2: {fileID: 1251346156}
   nearenemy1: {fileID: 1304514225}
   nearenemy2: {fileID: 2080708834}
-  nearenemy3: {fileID: 1841141614}
+  nearenemy3: {fileID: 149868697}
 --- !u!1 &219353767 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3641314227472992437, guid: 72abef278b605d14090542ac42d04b44,
@@ -30695,15 +30695,15 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -10.596338, y: -8.801964}
-      - {x: -8.121292, y: -7.3608513}
-      - {x: -3.4005198, y: -6.1813602}
+      - {x: -10.509415, y: -7.1771507}
+      - {x: -3.7369537, y: -6.2374344}
       - {x: -2.7677917, y: -2.8747444}
-      - {x: -3.2612152, y: 0.37041092}
-      - {x: -8.335251, y: 1.1567516}
-      - {x: -10.856737, y: 2.4026845}
-      - {x: -0.93182373, y: 1.5263157}
-      - {x: -0.9886627, y: -2.9394913}
-      - {x: -1.083786, y: -7.485277}
+      - {x: -3.5976562, y: 0.37041092}
+      - {x: -11.138931, y: 0.8763828}
+      - {x: -11.585693, y: 2.9073486}
+      - {x: 0.3018036, y: 2.0309792}
+      - {x: 0.63746643, y: -4.2852592}
+      - {x: 0.3180542, y: -8.158161}
 --- !u!4 &510633272
 Transform:
   m_ObjectHideFlags: 0
@@ -35866,9 +35866,9 @@ MonoBehaviour:
   m_LightType: 1
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 1
-  m_Color: {r: 1, g: 1, b: 0.26666668, a: 1}
+  m_Color: {r: 0.8490566, g: 0.7450161, b: 0.13216448, a: 1}
   m_Intensity: 2
-  m_LightVolumeOpacity: 0.52
+  m_LightVolumeOpacity: 0.43
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
@@ -36721,10 +36721,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -18.451706, y: -1.9173679}
-      - {x: -18.48941, y: 1.4983101}
-      - {x: 9.284882, y: 2.0146484}
-      - {x: 9.242462, y: -1.4490261}
+    - - {x: -18.259598, y: -2.0405235}
+      - {x: -18.13388, y: 4.408272}
+      - {x: 9.196014, y: 4.414444}
+      - {x: 9.242493, y: -1.9735413}
 --- !u!4 &1727438131
 Transform:
   m_ObjectHideFlags: 0
@@ -45991,10 +45991,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 10.557655, y: -1.007988}
-      - {x: 10.837692, y: 3.002367}
-      - {x: 5.676262, y: 3.25659}
-      - {x: 5.4383698, y: -1.0354757}
+    - - {x: 12.932655, y: -1.257988}
+      - {x: 13.462692, y: 2.877367}
+      - {x: 5.676262, y: 2.88159}
+      - {x: 5.3758698, y: -1.5354757}
       - {x: 9.058678, y: -0.85403824}
 --- !u!4 &1982814022
 Transform:
