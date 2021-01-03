@@ -20,6 +20,8 @@ public class CameraZoom : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            GetComponent<Collider2D>().enabled = false;
+
             if (zoomIn)
             {
                 StartCoroutine(StartZoomIn());

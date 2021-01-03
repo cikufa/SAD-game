@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class CheckPointManager : MonoBehaviour
 {
     public GameObject Player;
@@ -29,7 +30,7 @@ public class CheckPointManager : MonoBehaviour
             currCheckpoint_number = PlayerPrefs.GetInt("CheckPointNum");
             currCheckPoint = transform.GetChild(currCheckpoint_number).GetComponent<CheckPoint>();
             currCheckpoint_Position.x = PlayerPrefs.GetFloat("CheckPointX");
-            currCheckpoint_Position.y = PlayerPrefs.GetFloat("CheckPointY");                 
+            currCheckpoint_Position.y = PlayerPrefs.GetFloat("CheckPointY");
 
 
             playerRef = Instantiate(Player, currCheckPoint.transform.position, Quaternion.identity).GetComponent<PlayerController>();
@@ -40,6 +41,7 @@ public class CheckPointManager : MonoBehaviour
         {
             playerRef = Instantiate(Player, startingPoint.position, Quaternion.identity).GetComponent<PlayerController>();
         }
+
     }
 
     private void Start()
@@ -57,7 +59,7 @@ public class CheckPointManager : MonoBehaviour
 
     public void CheckPointIsTriggered(int childCount, CheckPoint checkPoint)
     {
-        if(childCount > currCheckpoint_number)
+        if (childCount > currCheckpoint_number)
         {
             currCheckPoint = checkPoint;
             currCheckpoint_number = childCount;
@@ -70,7 +72,7 @@ public class CheckPointManager : MonoBehaviour
 
     void RespawnPlayer()
     {
-       
+
         if (currCheckpoint_number != -1)     //player has reached some checkpoint
         {
             //playerRef = Instantiate(Player, transform.GetChild(currCheckpoint_number).position, Quaternion.identity).GetComponent<PlayerController>();
@@ -98,7 +100,7 @@ public class CheckPointManager : MonoBehaviour
         int i = 0;
         foreach (GameObject item in itemsDictionary.Keys)
         {
-            if (!items[i].gameObject.activeSelf )
+            if (!items[i].gameObject.activeSelf)
             {
                 items[i] = Instantiate(item, itemsDictionary[item].position, Quaternion.identity).transform;
                 items[i].gameObject.SetActive(true);
