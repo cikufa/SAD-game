@@ -1,37 +1,25 @@
 fileFormatVersion: 2
-guid: c826a146ed3315542a61bc7b8caac090
+guid: 9a351845a1c328c48b574f1d2b2f9efd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2874321030387171364
-    second: HideEnemyAppearing_0
+      213: 1290827204133210996
+    second: HideEnemyApperaringreen_0
   - first:
-      213: 8653068397218749110
-    second: HideEnemyAppearing_1
+      213: -8968594819048654438
+    second: HideEnemyApperaringreen_1
   - first:
-      213: 5274752215911815335
-    second: HideEnemyAppearing_2
+      213: -5134592864534286353
+    second: HideEnemyApperaringreen_2
   - first:
-      213: -9021928818736597680
-    second: HideEnemyAppearing_3
+      213: 1240263061508685239
+    second: HideEnemyApperaringreen_3
   - first:
-      213: -3979743917347864739
-    second: HideEnemyAppearing_0
+      213: -2797938888568847850
+    second: HideEnemyApperaringreen_4
   - first:
-      213: 2088192616210474497
-    second: HideEnemyAppearing_1
-  - first:
-      213: -2931683383676870004
-    second: HideEnemyAppearing_2
-  - first:
-      213: -8652185709078467155
-    second: HideEnemyAppearing_3
-  - first:
-      213: 4395423952690028152
-    second: HideEnemyAppearing_4
-  - first:
-      213: 904054323978933031
-    second: HideEnemyAppearing_5
+      213: 4200373495411244272
+    second: HideEnemyApperaringreen_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -141,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HideEnemyAppearing_0
+      name: HideEnemyApperaringreen_0
       rect:
         serializedVersion: 2
         x: 3
@@ -155,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5f75752efb15c8c0800000000000000
-      internalID: -3979743917347864739
+      spriteID: 47b45c8c080f9e110800000000000000
+      internalID: 1290827204133210996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HideEnemyAppearing_1
+      name: HideEnemyApperaringreen_1
       rect:
         serializedVersion: 2
         x: 66
@@ -176,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 106a1d7ee10cafc10800000000000000
-      internalID: 2088192616210474497
+      spriteID: a99323c9786298380800000000000000
+      internalID: -8968594819048654438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HideEnemyAppearing_2
+      name: HideEnemyApperaringreen_2
       rect:
         serializedVersion: 2
         x: 130
@@ -197,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c82660ace719057d0800000000000000
-      internalID: -2931683383676870004
+      spriteID: fefad237ef24eb8b0800000000000000
+      internalID: -5134592864534286353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HideEnemyAppearing_3
+      name: HideEnemyApperaringreen_3
       rect:
         serializedVersion: 2
         x: 195
@@ -218,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dadaaa750f24de780800000000000000
-      internalID: -8652185709078467155
+      spriteID: 7bd7349eeac463110800000000000000
+      internalID: 1240263061508685239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HideEnemyAppearing_4
+      name: HideEnemyApperaringreen_4
       rect:
         serializedVersion: 2
         x: 259
@@ -239,14 +227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87e15590cceaffc30800000000000000
-      internalID: 4395423952690028152
+      spriteID: 6124a9ba769bb29d0800000000000000
+      internalID: -2797938888568847850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HideEnemyAppearing_5
+      name: HideEnemyApperaringreen_5
       rect:
         serializedVersion: 2
         x: 323
@@ -260,8 +248,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7239b662e98db8c00800000000000000
-      internalID: 904054323978933031
+      spriteID: 0fcf3f58079ba4a30800000000000000
+      internalID: 4200373495411244272
       vertices: []
       indices: 
       edges: []
