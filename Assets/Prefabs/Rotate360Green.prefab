@@ -48,7 +48,7 @@ MonoBehaviour:
   m_LightType: 1
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.403
-  m_Color: {r: 0.4, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.30016014, g: 0.6226415, b: 0.085172676, a: 1}
   m_Intensity: 2.5
   m_LightVolumeOpacity: 0.103
   m_ApplyToSortingLayers: 0000000069376b9a
@@ -244,8 +244,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d4ef61486eb22489350715143bb2d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasObject: {fileID: 0}
-  gameStatus: {fileID: 0}
 --- !u!60 &4235278914348882831
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -335,7 +333,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -357,7 +355,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d908f7c20bfb05649b683668ecdffd6f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6981132, g: 0.69438857, b: 0.68164825, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -438,8 +436,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d4ef61486eb22489350715143bb2d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasObject: {fileID: 0}
-  gameStatus: {fileID: 0}
 --- !u!95 &4235278914819893075
 Animator:
   serializedVersion: 3

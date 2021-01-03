@@ -53,7 +53,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 1260d4f29a2e36f47aed524f66db19b1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6698113, g: 0.6698113, b: 0.6698113, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -145,8 +145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d4ef61486eb22489350715143bb2d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasObject: {fileID: 0}
-  gameStatus: {fileID: 0}
 --- !u!95 &1919429200317766319
 Animator:
   serializedVersion: 3
@@ -232,6 +230,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rotate Light Up Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 8086643546871413199, guid: 0bc72c25c59d11a4e8090a91a019f5b2,
+        type: 3}
+      propertyPath: leftRange
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 8086643546871413199, guid: 0bc72c25c59d11a4e8090a91a019f5b2,
+        type: 3}
+      propertyPath: rightRange
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8086643546947229546, guid: 0bc72c25c59d11a4e8090a91a019f5b2,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.29411766
+      objectReference: {fileID: 0}
+    - target: {fileID: 8086643546947229546, guid: 0bc72c25c59d11a4e8090a91a019f5b2,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 8086643546947229546, guid: 0bc72c25c59d11a4e8090a91a019f5b2,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.07450981
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bc72c25c59d11a4e8090a91a019f5b2, type: 3}
