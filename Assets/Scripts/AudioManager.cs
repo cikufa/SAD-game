@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Audio;
 using System;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -26,10 +27,19 @@ public class AudioManager : MonoBehaviour
             s.source.loop = s.loop;
         }
     }
-    void Start()
+    /*
+    void Update()
     {
-        //Play(");
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            Play("Menu");
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 2 || SceneManager.GetActiveScene().buildIndex == 4 || SceneManager.GetActiveScene().buildIndex == 6)
+        {
+            Play("GamePlay");
+        }
     }
+    */
     public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
@@ -37,7 +47,19 @@ public class AudioManager : MonoBehaviour
         {
             return;
         }
-        s.source.Play();
-    }
+        if (puaseManager.GameIsPaused)
+        {
+            s.source.pitch *= .5f;
 
+        }
+        s.source.Play();
+
+    }
+    public void Mute()
+    {
+        foreach (Sound s in sounds)
+        {
+            s.source.volume = 0f;
+        }
+    }
 }

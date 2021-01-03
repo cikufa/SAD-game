@@ -34,5 +34,14 @@ public class puaseManager : MonoBehaviour
         GameManager.Instance.forHome();
         //SceneManager.LoadScene("Menu");
     }
+    public void OnClickSound()
+    {
+        if (AudioListener.volume != 0)
+        {
+            AudioListener.volume = 0f;
+        }
+        else
+            AudioListener.volume = 3f;
+    }
 
 }
