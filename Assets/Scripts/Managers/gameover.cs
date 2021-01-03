@@ -4,39 +4,26 @@ using UnityEngine;
 
 public class gameover : MonoBehaviour
 {
-    private GameObject player; 
-    float startTime = 1000;
-    void Update()
+    private GameObject player;
+    int timeout=5;
+    //float startTime = 1000;
+    private void Start()
     {
-        //Debug.Log(Time.deltaTime);
+        player = GameObject.FindWithTag("Player");
 
-        if (Time.time > startTime + 5)
-        {
-            startTime = Time.time;
-            //Debug.Log("timeout");
-           // this.GetComponent<Collider2D>().isTrigger = false;
-           // this.GetComponent<Collider2D>().isTrigger = true;
-            player = GameObject.FindWithTag("Player");
-            player.GetComponent<PlayerController>().life--;
-            EventBroker.CallUpdateLifeInUi(player.GetComponent<PlayerController>().life);
-            if (player.GetComponent<PlayerController>().life == 0)
-            {
-                //Destroy(other.gameObject);
-                player.gameObject.SetActive(false);
-                EventBroker.CallGameOver();
-                //GameManager.Instance.TogglePause();                
-            }
-
-        }
     }
+  
     void OnTriggerEnter2D(Collider2D other)
     {
-        //Invoke("OnTriggerExit2D", 1);
+        
         if (other.gameObject.tag == "Player" && !testShield.shieldactive)
         {
-            Debug.Log("enter");
-            startTime = Time.time; 
+            
+            //startTime = Time.time; 
             other.GetComponent<PlayerController>().life--;
+            other.tag = "notPlayer";
+            //other.GetComponent<Collider2D>().enabled = false;
+            Invoke("tagBack",timeout);
             EventBroker.CallUpdateLifeInUi(other.GetComponent<PlayerController>().life);
             if (other.GetComponent<PlayerController>().life == 0)
             {
@@ -48,13 +35,11 @@ public class gameover : MonoBehaviour
         }
     }
     
-    void OnTriggerExit2D(Collider2D other)
+   
+    void tagBack()
     {
-        if (other.gameObject.tag == "Player" && !testShield.shieldactive)
-        {
-            Debug.Log("exit");
-            startTime = 1000;
-        }
+        //player.GetComponent<Collider2D>().enabled = true;
+        player.tag = "Player";
     }
      
 }

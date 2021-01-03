@@ -3,37 +3,47 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 
-public class turorialLightup : MonoBehaviour
+public class tut : MonoBehaviour
 {
-    public int tutNum;
+    //public int tutNum;
     public GameObject bglight;
-    public GameObject lamps;
-    public GameObject Enemies;
+    
     public GameObject enemytut;
     public GameObject tutLight;
+    public GameObject nearlamp1;
+    public GameObject nearlamp2;
+    public GameObject nearenemy1;
+    public GameObject nearenemy2;
+    public GameObject nearenemy3;
     // Start is called before the first frame update
     void Start()
     {
-        //tutLight= this.GetComponent<Light2D>();   
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            bglight.GetComponent<Light2D>().intensity = 0.15f;
-            lamps.GetComponent<Light2D>().intensity = 0.1f;
-            Enemies.SetActive(false);
+            bglight.GetComponent<Light2D>().intensity = 0.2f;
+            
+            nearlamp1.GetComponent<Light2D>().intensity = 0.4f;
+            nearlamp2.GetComponent<Light2D>().intensity = 0.4f;
+            nearenemy1.SetActive(false);
+            nearenemy2.SetActive(false);
+            nearenemy3.SetActive(false);
+            
             enemytut.SetActive(true);
             tutLight.SetActive(true);
             /*switch (tutNum)
             {
                 case 1:
+            
                     ctetut.SetActive(true);
                     ctetut.transform.GetChild(1).gameObject.SetActive(true);
                     break;
@@ -61,11 +71,14 @@ public class turorialLightup : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             bglight.GetComponent<Light2D>().intensity = 0.3f;
-            lamps.GetComponent<Light2D>().intensity = 1;
-            Enemies.SetActive(true);
+            nearlamp1.GetComponent<Light2D>().intensity = 1;
+            nearlamp2.GetComponent<Light2D>().intensity = 1;
+            nearenemy1.SetActive(true);
+            nearenemy2.SetActive(true);
+            nearenemy3.SetActive(true);
             Destroy(this); //destroy collider
             Destroy(tutLight);
-           
+
             /*switch (tutNum)
             {
                 case 1:
@@ -83,5 +96,4 @@ public class turorialLightup : MonoBehaviour
             }*/
         }
     }
-
 }

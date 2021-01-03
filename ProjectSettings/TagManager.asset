@@ -8,6 +8,7 @@ TagManager:
   - won
   - shieldItem
   - FollowEnemy
+  - notPlayer
   layers:
   - Default
   - TransparentFX

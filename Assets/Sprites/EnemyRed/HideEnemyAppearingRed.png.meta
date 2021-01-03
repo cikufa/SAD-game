@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: fdb038b3437f8ed418a9bf7e2775096d
+guid: f2e2631d74d14f74ebdb9b6929ce6d76
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -248864109099962249
-    second: HideEnemyApperaring_0
+      213: -2142193688818851699
+    second: HideEnemyAppearingRed_0
   - first:
-      213: -1870408160136533716
-    second: HideEnemyApperaring_1
+      213: 6818793960350108443
+    second: HideEnemyAppearingRed_1
   - first:
-      213: 8486183997481524962
-    second: HideEnemyApperaring_2
+      213: 468633285964064605
+    second: HideEnemyAppearingRed_2
   - first:
-      213: 3993500556357838784
-    second: HideEnemyApperaring_3
+      213: 7939658198736413469
+    second: HideEnemyAppearingRed_3
   - first:
-      213: -5812993748403637564
-    second: HideEnemyApperaring_4
+      213: 7060437821797020700
+    second: HideEnemyAppearingRed_4
   - first:
-      213: 1882023735758549878
-    second: HideEnemyApperaring_5
+      213: -7877824799142355697
+    second: HideEnemyAppearingRed_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HideEnemyApperaring_0
+      name: HideEnemyAppearingRed_0
       rect:
         serializedVersion: 2
         x: 3
@@ -143,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 770b0cb496bdb8cf0800000000000000
-      internalID: -248864109099962249
+      spriteID: d806ed990366542e0800000000000000
+      internalID: -2142193688818851699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HideEnemyApperaring_1
+      name: HideEnemyAppearingRed_1
       rect:
         serializedVersion: 2
         x: 66
@@ -164,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c29e11e20b9fa06e0800000000000000
-      internalID: -1870408160136533716
+      spriteID: b1b4f3bbaf831ae50800000000000000
+      internalID: 6818793960350108443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HideEnemyApperaring_2
+      name: HideEnemyAppearingRed_2
       rect:
         serializedVersion: 2
         x: 130
@@ -185,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ee9d7c426bf4c570800000000000000
-      internalID: 8486183997481524962
+      spriteID: d57efcb9d7be08600800000000000000
+      internalID: 468633285964064605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HideEnemyApperaring_3
+      name: HideEnemyAppearingRed_3
       rect:
         serializedVersion: 2
         x: 195
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c7a808f893cb6730800000000000000
-      internalID: 3993500556357838784
+      spriteID: d13a3bdc0155f2e60800000000000000
+      internalID: 7939658198736413469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HideEnemyApperaring_4
+      name: HideEnemyAppearingRed_4
       rect:
         serializedVersion: 2
         x: 259
@@ -227,14 +227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c2b5d00cf8145fa0800000000000000
-      internalID: -5812993748403637564
+      spriteID: c14b1f68ac6bbf160800000000000000
+      internalID: 7060437821797020700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HideEnemyApperaring_5
+      name: HideEnemyAppearingRed_5
       rect:
         serializedVersion: 2
         x: 323
@@ -248,8 +248,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 673fdb4cd9a4e1a10800000000000000
-      internalID: 1882023735758549878
+      spriteID: f0d5b5c65185ca290800000000000000
+      internalID: -7877824799142355697
       vertices: []
       indices: 
       edges: []
