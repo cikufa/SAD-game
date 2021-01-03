@@ -82,6 +82,7 @@ public class GameManager : Singleton<GameManager>
     }
     public void OnLevelSelectedButtonClickedInMenu(int levelNumber)
     {
+        PlayerPrefs.SetString("checkpointIsValid", "false");
         LoadLevel("Map" + levelNumber.ToString());
         UpdateState(GameState.PLAYING);
     }
@@ -193,6 +194,10 @@ public class GameManager : Singleton<GameManager>
         {
             UpdateState(GameState.PLAYING);
         }
+    }
+    public void forHome()
+    {
+        LoadLevel("Menu");
     }
 
     public void ReplayLevel()
