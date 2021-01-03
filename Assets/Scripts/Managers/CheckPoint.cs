@@ -11,6 +11,7 @@ public class CheckPoint : MonoBehaviour
         {
             GetComponentInParent<CheckPointManager>().CheckPointIsTriggered(transform.GetSiblingIndex(), this);
             transform.GetChild(0).GetComponent<Animator>().enabled = false;
+            Debug.Log("CheckPointTriggered");
         }
     }
 }
