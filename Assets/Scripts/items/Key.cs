@@ -9,6 +9,7 @@ public class Key : MonoBehaviour
     private Light child;
     private bool what = true;
     public float time = 5f;
+    public static float endTime = 20;
     //public float sec = 1f;
     //private Light child;
     void Start()
@@ -56,6 +57,7 @@ public class Key : MonoBehaviour
             GetComponent<Renderer>().enabled = false;
             what = false;
         }
+        Invoke("end", endTime);
     }
     /*  void Update()
       {
@@ -106,6 +108,10 @@ public class Key : MonoBehaviour
                 l.gameObject.SetActive(true);
             }
         }
+    }
+    public void end()
+    {
+        gameObject.SetActive(false);
     }
 }
 
