@@ -6,6 +6,6 @@ public class Play : MonoBehaviour
 {
     public void PlayGame()
     {
-        GameManager.Instance.OnPlayButtonClickedInMenu();
+        GameManager.Instance.OnContinueButtonClickedInMenu();
     }
 }

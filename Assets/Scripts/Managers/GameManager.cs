@@ -145,16 +145,23 @@ public class GameManager : Singleton<GameManager>
         UpdateState(GameState.PLAYING);
         _asyncOperations.Remove(ao);
         Debug.Log("Load Complete.");
-        if ((_currentLevelName == "Map1" || _currentLevelName == "Map2" || _currentLevelName == "Map3") && !puaseManager.GameIsPaused)
+        if ((_currentLevelName == "Map1" || _currentLevelName == "Map2" || _currentLevelName == "Map3") /*&& !puaseManager.GameIsPaused*/)
         {
-            Debug.Log("M");
+            string lvlNum = "";
+            lvlNum += _currentLevelName[3];
+            PlayerPrefs.SetInt("Map", int.Parse(lvlNum));
+
             GetComponent<AudioSource>().clip = gamePlayMusic;
             GetComponent<AudioSource>().Play();
         }
-        else if(_currentLevelName == "Menu" && !puaseManager.GameIsPaused)
+        else if(_currentLevelName == "Menu" /* && !puaseManager.GameIsPaused*/)
         {
             GetComponent<AudioSource>().clip = MenuMusic;
             GetComponent<AudioSource>().Play();
+        }
+        else if (_currentLevelName == "levelcompletion1" || _currentLevelName == "levelcompletion2" || _currentLevelName == "levelcompletion3")
+        {
+            GetComponent<AudioSource>().Stop();
         }
     }
 
@@ -216,11 +223,11 @@ public class GameManager : Singleton<GameManager>
 
     public void SaveProgress()
     {
-        PlayerPrefs.SetInt("Map", mapNumber);
+       // PlayerPrefs.SetInt("Map", mapNumber);
     }
 
     public void SaveProgress(Vector2 checkPointPos,int checkPointNum, int lives)
-    {
+    { 
         PlayerPrefs.SetString("checkpointIsValid", "true");
         PlayerPrefs.SetInt("CheckPointNum", checkPointNum);     //child number of checkpoint
         PlayerPrefs.SetFloat("CheckPointX", checkPointPos.x);
