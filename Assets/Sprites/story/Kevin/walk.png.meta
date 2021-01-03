@@ -1,40 +1,22 @@
 fileFormatVersion: 2
-guid: d71389de22863f34d9b3a7cd4266fa38
+guid: 16f8833d082fcee4ab49e5beb0f31630
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9045208880589451659
-    second: football_0
+      213: -8296385383580801948
+    second: walk_0
   - first:
-      213: -6328419109485337791
-    second: football_1
+      213: 3218353051568008401
+    second: walk_1
   - first:
-      213: 5942467529716024075
-    second: football_2
+      213: 6971375644381031630
+    second: walk_2
   - first:
-      213: 9173957741158652073
-    second: football_3
+      213: -3714987382563562326
+    second: walk_3
   - first:
-      213: -3272338057121454593
-    second: football_4
-  - first:
-      213: 2238309056620181779
-    second: football_5
-  - first:
-      213: -2047549925808256884
-    second: football_6
-  - first:
-      213: 7656548765825591513
-    second: football_7
-  - first:
-      213: 5781164584341046243
-    second: football_8
-  - first:
-      213: -5949300247300412832
-    second: football_9
-  - first:
-      213: 336866432323213678
-    second: football_10
+      213: -2044624726750869082
+    second: walk_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -129,7 +111,55 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
@@ -144,190 +174,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: football_0
+      name: walk_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 4
-        width: 33
-        height: 54
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b813eb6ad89078d70800000000000000
-      internalID: 9045208880589451659
+      spriteID: 4646ce323715ddc80800000000000000
+      internalID: -8296385383580801948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: football_1
+      name: walk_1
       rect:
         serializedVersion: 2
-        x: 81
-        y: 4
-        width: 33
-        height: 53
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 143255d6950fc28a0800000000000000
-      internalID: -6328419109485337791
+      spriteID: 1dc61808c03e9ac20800000000000000
+      internalID: 3218353051568008401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: football_2
+      name: walk_2
       rect:
         serializedVersion: 2
-        x: 145
-        y: 4
-        width: 33
-        height: 53
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b034406dbb2e77250800000000000000
-      internalID: 5942467529716024075
+      spriteID: ecc242f663d4fb060800000000000000
+      internalID: 6971375644381031630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: football_3
+      name: walk_3
       rect:
         serializedVersion: 2
-        x: 209
-        y: 4
-        width: 33
-        height: 53
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a8d43ab5f1705f70800000000000000
-      internalID: 9173957741158652073
+      spriteID: aac9d3d88a6b17cc0800000000000000
+      internalID: -3714987382563562326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: football_5
+      name: walk_4
       rect:
         serializedVersion: 2
-        x: 273
-        y: 4
-        width: 33
-        height: 53
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 319b2695a32101f10800000000000000
-      internalID: 2238309056620181779
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: football_6
-      rect:
-        serializedVersion: 2
-        x: 337
-        y: 4
-        width: 33
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c88425cd034a593e0800000000000000
-      internalID: -2047549925808256884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: football_7
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 4
-        width: 33
-        height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d86d705986814a60800000000000000
-      internalID: 7656548765825591513
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: football_8
-      rect:
-        serializedVersion: 2
-        x: 465
-        y: 4
-        width: 32
-        height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e387bd3f82da3050800000000000000
-      internalID: 5781164584341046243
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: football_10
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 12
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e69d0634c3acca400800000000000000
-      internalID: 336866432323213678
+      spriteID: 6a9c807d4a800a3e0800000000000000
+      internalID: -2044624726750869082
       vertices: []
       indices: 
       edges: []
