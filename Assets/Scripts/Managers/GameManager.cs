@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -15,6 +16,7 @@ public class GameManager : Singleton<GameManager>
     private List<AsyncOperation> _asyncOperations;
 
     [SerializeField]
+    //Toggle audioToggle;
     private GameObject[] systemPrefabs;
     private List<GameObject> _instancedSystemPrefabs;
 
@@ -37,6 +39,13 @@ public class GameManager : Singleton<GameManager>
 
     private void Start()
     {
+        /*
+        if (AudioListener.volume == 0)
+        {
+            audioToggle.isOn = false;
+        }
+        */
+
         DontDestroyOnLoad(this);
 
         _asyncOperations = new List<AsyncOperation>();
@@ -136,13 +145,13 @@ public class GameManager : Singleton<GameManager>
         UpdateState(GameState.PLAYING);
         _asyncOperations.Remove(ao);
         Debug.Log("Load Complete.");
-
-        if (_currentLevelName == "Map1" || _currentLevelName == "Map2" || _currentLevelName == "Map3")
+        if ((_currentLevelName == "Map1" || _currentLevelName == "Map2" || _currentLevelName == "Map3") && !puaseManager.GameIsPaused)
         {
+            Debug.Log("M");
             GetComponent<AudioSource>().clip = gamePlayMusic;
             GetComponent<AudioSource>().Play();
         }
-        else if(_currentLevelName == "Menu")
+        else if(_currentLevelName == "Menu" && !puaseManager.GameIsPaused)
         {
             GetComponent<AudioSource>().clip = MenuMusic;
             GetComponent<AudioSource>().Play();

@@ -56,7 +56,8 @@ public class shield : MonoBehaviour
      {
          
          if (other.tag != "player")
-         {    
+         {
+            GetComponent<AudioSource>().Play();
              Invoke("pop", testShield.shieldTime);     
          }
      }
@@ -64,7 +65,8 @@ public class shield : MonoBehaviour
      void pop()
      {
          bubblepop.SetBool("pop", true);
-         Invoke("byeBubble",1.1f);
+        GetComponent<AudioSource>().Play();
+        Invoke("byeBubble",1.1f);
          
      }
      void byeBubble()
