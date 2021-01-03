@@ -21,10 +21,10 @@ TagManager:
   - Obstacle
   - background
   - 
+  - Player
   - 
-  - 
-  - 
-  - 
+  - GreenObstacle
+  - RedObstacle
   - 
   - 
   - 
