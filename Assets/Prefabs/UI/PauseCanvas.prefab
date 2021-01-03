@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e47a87e40d72714c8f8d9f112e6c0b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseCanvasPanel: {fileID: 0}
+  PauseCanvasPanel: {fileID: 2414940326950937322}
 --- !u!1 &2713930027328243676
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e47a87e40d72714c8f8d9f112e6c0b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseCanvasPanel: {fileID: 0}
+  PauseCanvasPanel: {fileID: 2414940326950937322}
 --- !u!1 &6669780560874319523
 GameObject:
   m_ObjectHideFlags: 0
