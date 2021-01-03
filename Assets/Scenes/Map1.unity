@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -46237,10 +46237,7 @@ MonoBehaviour:
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
-    ModeOverride: 0
     LensShift: {x: 0, y: 0}
-    GateFit: 2
-    m_SensorSize: {x: 2.0555556, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -46618,12 +46615,12 @@ PrefabInstance:
     - target: {fileID: 3641314227472992428, guid: 72abef278b605d14090542ac42d04b44,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 161.19
+      value: 160.27
       objectReference: {fileID: 0}
     - target: {fileID: 3641314227472992428, guid: 72abef278b605d14090542ac42d04b44,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.9
+      value: -3.2
       objectReference: {fileID: 0}
     - target: {fileID: 3641314227472992428, guid: 72abef278b605d14090542ac42d04b44,
         type: 3}
@@ -46674,16 +46671,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Parent Triangle Light Yellow UpDown
-      objectReference: {fileID: 0}
-    - target: {fileID: 3641314227472992442, guid: 72abef278b605d14090542ac42d04b44,
-        type: 3}
-      propertyPath: upLimit
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3641314227472992442, guid: 72abef278b605d14090542ac42d04b44,
-        type: 3}
-      propertyPath: downLimit
-      value: -8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72abef278b605d14090542ac42d04b44, type: 3}
