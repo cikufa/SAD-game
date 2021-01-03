@@ -154,7 +154,7 @@ MonoBehaviour:
   systemPrefabs: []
   mapNumber: 1
   gamePlayMusic: {fileID: 8300000, guid: 0e38bc2487fb662438f83a204a8fa229, type: 3}
-  MenuMusic: {fileID: 8300000, guid: 0e38bc2487fb662438f83a204a8fa229, type: 3}
+  MenuMusic: {fileID: 8300000, guid: 35ff3dfec9c41be49990275ccc5d863a, type: 3}
 --- !u!4 &1885831033
 Transform:
   m_ObjectHideFlags: 0
