@@ -261,6 +261,6 @@ MonoBehaviour:
   upLimit: 10
   downLimit: 5
   outerPlus: 0.1
-  colliderPlus: 0.04
+  colliderPlus: 0.03
   time: 0.1
   shouldGetBigger: 1
