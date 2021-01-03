@@ -149,7 +149,8 @@ public class GameManager : Singleton<GameManager>
         {
             string lvlNum = "";
             lvlNum += _currentLevelName[3];
-            PlayerPrefs.SetInt("Map", int.Parse(lvlNum));
+            mapNumber = int.Parse(lvlNum);
+            PlayerPrefs.SetInt("Map", mapNumber);
 
             GetComponent<AudioSource>().clip = gamePlayMusic;
             GetComponent<AudioSource>().Play();
@@ -219,11 +220,6 @@ public class GameManager : Singleton<GameManager>
     public void ReplayLevel()
     {
         LoadLevel(_currentLevelName);
-    }
-
-    public void SaveProgress()
-    {
-       // PlayerPrefs.SetInt("Map", mapNumber);
     }
 
     public void SaveProgress(Vector2 checkPointPos,int checkPointNum, int lives)

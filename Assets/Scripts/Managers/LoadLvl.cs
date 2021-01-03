@@ -8,13 +8,16 @@ public class LoadLvl : MonoBehaviour
 
     private void Start()
     {
-        GameManager.Instance.mapNumber++;
-        PlayerPrefs.SetString("checkpointIsValid", "false");
-        mapNumberToLoad = GameManager.Instance.mapNumber >= 3 ? string.Empty : "Map"+GameManager.Instance.mapNumber .ToString();
-        //nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
-        GameManager.Instance.SaveProgress();
+        //GameManager.Instance.mapNumber++;
+        Invoke("Calculate", .5f);
+        
     }
 
+    void Calculate()
+    {
+        PlayerPrefs.SetString("checkpointIsValid", "false");
+        mapNumberToLoad = GameManager.Instance.mapNumber >= 3 ? string.Empty : "Map" + (GameManager.Instance.mapNumber + 1).ToString();
+    }
 
     public void OnClickLoadNewLvl()
     {       
@@ -26,5 +29,10 @@ public class LoadLvl : MonoBehaviour
         {
             Debug.Log("No more maps.");
         }
+    }
+
+    public void OnClickBackToMenu()
+    {
+        GameManager.Instance.LoadLevel("Menu");
     }
 }

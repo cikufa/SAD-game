@@ -58,12 +58,12 @@ public class EnemySpeedController : MonoBehaviour
     }
     void Start()
     {
-        EventBroker.RetryLevel += RespawnPlayer;
+        EventBroker.GameOver += RespawnPlayer;
     }
 
     private void OnDestroy()
     {
-        EventBroker.RetryLevel -= RespawnPlayer;
+        EventBroker.GameOver -= RespawnPlayer;
     }
 
     void RespawnPlayer()

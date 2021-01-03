@@ -14,7 +14,9 @@ public class Key : MonoBehaviour
     //private Light child;
     void Start()
     {
+        EventBroker.GameOver += PlayerRespawn;
         StartCoroutine(DoEveryFelanSeconds());
+        
     }
     /* void OnTriggerEnter2D(Collider2D other)
      {
@@ -48,16 +50,20 @@ public class Key : MonoBehaviour
          }
     */
 
+   
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
+            StopCoroutine(DoEveryFelanSeconds());
             Debug.Log("entered");
             GetComponent<Renderer>().enabled = false;
+            transform.GetChild(0).GetComponent<AudioSource>().Stop();
             what = false;
+            Invoke("end", endTime);
         }
-        Invoke("end", endTime);
+        
     }
     /*  void Update()
       {
@@ -112,6 +118,21 @@ public class Key : MonoBehaviour
     public void end()
     {
         gameObject.SetActive(false);
+    }
+
+    void PlayerRespawn()
+    {
+        Debug.Log("heeeeeeeeey");
+        if (IsInvoking())
+        {
+            CancelInvoke();
+        }
+        this.gameObject.SetActive(false);
+    }
+
+    private void OnDestroy()
+    {
+        EventBroker.GameOver -= PlayerRespawn;
     }
 }
 
