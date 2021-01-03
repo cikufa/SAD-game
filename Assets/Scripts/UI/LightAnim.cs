@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpaceShipAnimation : MonoBehaviour
+public class LightAnim : MonoBehaviour
 {
     public Animator generalAnim;
 
     public void AnimationEnded()
     {
-        generalAnim.SetTrigger("SpaceshipStart");
+        generalAnim.SetTrigger("LightStart");
     }
 }
