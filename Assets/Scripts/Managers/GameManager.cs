@@ -27,6 +27,8 @@ public class GameManager : Singleton<GameManager>
     }
 
     public int mapNumber = 1;
+    //public int levelNumber = 1;
+
 
 
     public AudioClip gamePlayMusic;
@@ -77,6 +79,17 @@ public class GameManager : Singleton<GameManager>
         }
 
         UpdateState(GameState.PLAYING);
+    }
+    public void OnLevelSelectedButtonClickedInMenu(int levelNumber)
+    {
+        LoadLevel("Map" + levelNumber.ToString());
+        UpdateState(GameState.PLAYING);
+    }
+
+    public void OnPlayButtonClickedInMenu()
+    {
+    LoadLevel("Map1");
+    UpdateState(GameState.PLAYING);
     }
 
     public void LoadLevel(string levelName)
