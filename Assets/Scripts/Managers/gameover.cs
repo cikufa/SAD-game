@@ -5,7 +5,7 @@ using UnityEngine;
 public class gameover : MonoBehaviour
 {
     private GameObject player;
-    int timeout=5;
+    float timeout=1.5f;
     //float startTime = 1000;
     private void Start()
     {

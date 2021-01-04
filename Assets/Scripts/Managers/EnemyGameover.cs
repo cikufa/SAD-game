@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyGameover : MonoBehaviour
 {
     private GameObject player;
-    int timeout=5;
+    float timeout=1.5f;
     private void Start()
     {
         player = GameObject.FindWithTag("Player");
