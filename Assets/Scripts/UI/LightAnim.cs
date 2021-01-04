@@ -8,6 +8,14 @@ public class LightAnim : MonoBehaviour
 
     public void AnimationEnded()
     {
+        Invoke("Load", 1);
+        
+    }
+
+    private void Load()
+    {
         generalAnim.SetTrigger("LightStart");
     }
+
+
 }

@@ -11,5 +11,8 @@ public class BlackAnim : MonoBehaviour
     {
         generalAnim.SetTrigger("BlackStart");
     }
-    
+    public void LoadMap1()
+    {
+        GameManager.Instance.LoadLevel("Map1");
+    }
 }

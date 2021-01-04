@@ -84,7 +84,7 @@ public class GameManager : Singleton<GameManager>
         }
         else
         {
-            LoadLevel("Map1");
+            LoadLevel("ProlougeAnim");
         }
 
         UpdateState(GameState.PLAYING);
