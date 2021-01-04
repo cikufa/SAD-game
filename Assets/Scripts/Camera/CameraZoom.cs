@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class CameraZoom : MonoBehaviour
 {
-    Camera cam;
+    public CinemachineVirtualCamera cinemachine;
+
+    //Camera cam;
     public bool zoomIn = false;
     public bool zoomOut = false;
     public float value;
@@ -13,7 +16,8 @@ public class CameraZoom : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cam = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
+        //cam = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
+       
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -39,13 +43,13 @@ public class CameraZoom : MonoBehaviour
     IEnumerator StartZoomIn()
     {
         float t = 0;
-        float startZoom = cam.orthographicSize;
+        float startZoom = cinemachine.m_Lens.OrthographicSize;
 
         while (t < 1)
         {
             t += Time.deltaTime * speed;
-            Debug.Log(cam.orthographicSize +" = "+value);
-            cam.orthographicSize = Mathf.Lerp(startZoom, value, t );
+            //Debug.Log(cam.orthographicSize +" = "+value);
+            cinemachine.m_Lens.OrthographicSize = Mathf.Lerp(startZoom, value, t );
             yield return new WaitForEndOfFrame();
         }
     }
@@ -53,13 +57,13 @@ public class CameraZoom : MonoBehaviour
     IEnumerator StartZoomOut()
     {
         float t = 0;
-        float startZoom = cam.orthographicSize;
+        float startZoom = cinemachine.m_Lens.OrthographicSize;
 
         while (t < 1)
         {
             t += Time.deltaTime * speed;
-            Debug.Log(cam.orthographicSize +" = "+value);
-            cam.orthographicSize = Mathf.Lerp(startZoom, value, t);
+            // Debug.Log(cinemachine.m_Lens.OrthographicSize +" = "+value);
+            cinemachine.m_Lens.OrthographicSize = Mathf.Lerp(startZoom, value, t);
             yield return new WaitForEndOfFrame();
         }
     }
