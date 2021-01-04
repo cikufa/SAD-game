@@ -20,15 +20,22 @@ public class levelcomp1 : MonoBehaviour
     //UnityEngine.Experimental.Rendering.Universal.Light2D light2;
     private int onetime, onetime2;
 
+    public AudioClip sound;
+
+    private AudioSource source { get { return GetComponent<AudioSource>(); } }
+
     [Space]
     public GameObject button;
     public Transform enemyManager;
 
     void Start()
     {
+        gameObject.AddComponent<AudioSource>();
+        source.clip = sound;
+        source.PlayOneShot(sound);
 
         light1 = colorLight1.GetComponent<UnityEngine.Experimental.Rendering.Universal.Light2D>();
-        
+
         charT = character.GetComponent<Transform>();
         //ballLight = yellowBall.GetComponent<Light2D>();
         ballSR = yellowBall.GetComponent<SpriteRenderer>();
@@ -53,29 +60,29 @@ public class levelcomp1 : MonoBehaviour
         }
         //else if (charT.localScale.x >= charScale.x & charT.localScale.y >= charScale.y)
         //{
-            //holdBallAnimator.SetBool("hold", true);
-            //ball apears
-            //yellowBall.SetActive(true);
-            //ballAnimator.SetBool(true);
-            // nore ball kam ziad she how?
-            //dont enter again
-            //charT.localScale += new Vector3(10, 10 ,0);
+        //holdBallAnimator.SetBool("hold", true);
+        //ball apears
+        //yellowBall.SetActive(true);
+        //ballAnimator.SetBool(true);
+        // nore ball kam ziad she how?
+        //dont enter again
+        //charT.localScale += new Vector3(10, 10 ,0);
 
         //}
         //light spreads
         if (light1.pointLightInnerRadius > 0.3)
         {
             light1.pointLightInnerRadius -= 0.002f;
-           
+
         }
         if (light1.pointLightOuterRadius > 0.4)
         {
             light1.pointLightOuterRadius -= 0.006f;
             light1.intensity += 0.0001f;
-           
+
         }
-        
-        if (light1.pointLightOuterRadius <= 0.4 & onetime==0)
+
+        if (light1.pointLightOuterRadius <= 0.4 & onetime == 0)
         {
             yellowBall.SetActive(true);
             onetime = 1;
@@ -92,10 +99,10 @@ public class levelcomp1 : MonoBehaviour
                 button.SetActive(true);
                 enemyManager.GetComponent<EnemyInCompletionLevel>().Explode();
             }
-            
+
         }
 
-        
+
 
     }
 }

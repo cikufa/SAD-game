@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1576,6 +1576,7 @@ MonoBehaviour:
   character: {fileID: 1259565698}
   yellowBall: {fileID: 944328524}
   colorLight1: {fileID: 522125209}
+  sound: {fileID: 8300000, guid: 234164837de148c41a6476fa5460ec03, type: 3}
   button: {fileID: 257018836}
   enemyManager: {fileID: 1216961987}
 --- !u!4 &1728756405

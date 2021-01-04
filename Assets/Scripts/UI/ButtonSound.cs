@@ -8,6 +8,7 @@ public class ButtonSound : MonoBehaviour
 {
 
     public AudioClip sound;
+
     private Button button { get { return GetComponent<Button>(); } }
 
     private AudioSource source { get { return GetComponent<AudioSource>(); } }
@@ -25,4 +26,6 @@ public class ButtonSound : MonoBehaviour
     {
         source.PlayOneShot(sound);
     }
+
+
 }
