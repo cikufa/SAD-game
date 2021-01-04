@@ -991,6 +991,7 @@ GameObject:
   - component: {fileID: 1124869627}
   - component: {fileID: 1124869626}
   - component: {fileID: 1124869625}
+  - component: {fileID: 1124869628}
   m_Layer: 5
   m_Name: continue button
   m_TagString: Untagged
@@ -1109,6 +1110,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124869623}
   m_CullTransparentMesh: 0
+--- !u!114 &1124869628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124869623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92094046610176346a53a3b84d699af9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 8e4f254b869d6e14e8e1e531b181a352, type: 3}
 --- !u!1 &1216961985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,6 +1385,7 @@ GameObject:
   - component: {fileID: 1281897829}
   - component: {fileID: 1281897828}
   - component: {fileID: 1281897827}
+  - component: {fileID: 1281897826}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1398,6 +1413,19 @@ RectTransform:
   m_AnchoredPosition: {x: 134.9, y: 54.8}
   m_SizeDelta: {x: 95.76822, y: 37.558636}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1281897826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281897824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92094046610176346a53a3b84d699af9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 8e4f254b869d6e14e8e1e531b181a352, type: 3}
 --- !u!114 &1281897827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1501,6 +1529,7 @@ GameObject:
   - component: {fileID: 1343413876}
   - component: {fileID: 1343413875}
   - component: {fileID: 1343413874}
+  - component: {fileID: 1343413877}
   m_Layer: 5
   m_Name: BackToMenu
   m_TagString: Untagged
@@ -1619,6 +1648,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343413872}
   m_CullTransparentMesh: 0
+--- !u!114 &1343413877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343413872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92094046610176346a53a3b84d699af9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 8e4f254b869d6e14e8e1e531b181a352, type: 3}
 --- !u!1 &1620237874
 GameObject:
   m_ObjectHideFlags: 0
