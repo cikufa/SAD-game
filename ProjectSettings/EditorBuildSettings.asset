@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/boot.unity
     guid: ba84eebecc180754381ed6f45b16e02a
   - enabled: 1
+    path: Assets/Scenes/ProlougeAnim.unity
+    guid: ac753c043389b2b47ae8156b00838b26
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 1bf7753a09a2de849abc5a62b724838e
   - enabled: 1
