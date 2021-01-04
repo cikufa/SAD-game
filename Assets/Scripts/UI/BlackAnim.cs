@@ -11,4 +11,5 @@ public class BlackAnim : MonoBehaviour
     {
         generalAnim.SetTrigger("BlackStart");
     }
+    
 }
