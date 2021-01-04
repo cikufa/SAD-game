@@ -88,5 +88,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parent Triangle Light red UpDown (3) Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3641314227472992426, guid: 72abef278b605d14090542ac42d04b44, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 72abef278b605d14090542ac42d04b44, type: 3}
