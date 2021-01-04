@@ -29,7 +29,8 @@ public class Invisible : MonoBehaviour
         {
             GetComponent<Renderer>().enabled = true;
             animator.SetBool("appear", true);
-          
+            GetComponent<AudioSource>().Play();
+
             if (itslight.intensity < intensity)
             {
                 itslight.intensity += 0.1f;
