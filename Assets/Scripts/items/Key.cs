@@ -8,8 +8,9 @@ public class Key : MonoBehaviour
     public GameObject itself;
     private Light child;
     private bool what = true;
-    public float time = 5f;
-    public static float endTime = 20;
+    public float time1 = 5f;
+    public float time2 = 2f;
+    public static float endTime = 20f;
     //public float sec = 1f;
     //private Light child;
     void Start()
@@ -56,12 +57,12 @@ public class Key : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            StopCoroutine(DoEveryFelanSeconds());
-            Debug.Log("entered");
+            //Debug.Log("entered");
             GetComponent<Renderer>().enabled = false;
             transform.GetChild(0).GetComponent<AudioSource>().Stop();
             what = false;
             Invoke("end", endTime);
+            StopCoroutine(DoEveryFelanSeconds());
         }
         
     }
@@ -85,9 +86,9 @@ public class Key : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(time);
+            yield return new WaitForSeconds(time1);
             DoSomething();
-            yield return new WaitForSeconds(time);
+            yield return new WaitForSeconds(time2);
             DoSomething2();
         }
     }
@@ -95,7 +96,7 @@ public class Key : MonoBehaviour
     // happens every 0.5 seconds
     void DoSomething()
     {
-        Debug.Log("d1");
+        //Debug.Log("d1");
         if (!what)
         {
             foreach (GameObject l in lights)
@@ -106,7 +107,7 @@ public class Key : MonoBehaviour
     }
     void DoSomething2()
     {
-        Debug.Log("d2");
+        //Debug.Log("d2");
         if (!what)
         {
             foreach (GameObject l in lights)
@@ -122,7 +123,7 @@ public class Key : MonoBehaviour
 
     void PlayerRespawn()
     {
-        Debug.Log("heeeeeeeeey");
+        //Debug.Log("heeeeeeeeey");
         if (IsInvoking())
         {
             CancelInvoke();
