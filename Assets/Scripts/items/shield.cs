@@ -54,12 +54,12 @@ public class shield : MonoBehaviour
     */
      void OnTriggerEnter2D(Collider2D other)
      {
-        if(other.tag == "Player")
+        if(other.tag == "Player"  || other.tag == "notPlayer")
         {
             GetComponent<AudioSource>().Play();
         }
 
-         if (other.tag != "player")
+         if (other.tag != "player" || other.tag == "notPlayer")
          {
             
              Invoke("pop", testShield.shieldTime);     
@@ -69,7 +69,7 @@ public class shield : MonoBehaviour
      void pop()
      {
          bubblepop.SetBool("pop", true);
-        Invoke("byeBubble",1.1f);
+        Invoke("byeBubble",1.2f);
          
      }
      void byeBubble()
