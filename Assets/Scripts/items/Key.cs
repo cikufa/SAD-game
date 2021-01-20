@@ -1,23 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class Key : MonoBehaviour
 {
     public GameObject[] lights;
     public GameObject itself;
-    private Light child;
+    public Light2D child;
     private bool what = true;
-    public float time1 = 5f;
-    public float time2 = 2f;
+    public float time1 = 2f;
+    public float time2 = 5f;
     public static float endTime = 20f;
     //public float sec = 1f;
     //private Light child;
     void Start()
     {
-        EventBroker.GameOver += PlayerRespawn;
         StartCoroutine(DoEveryFelanSeconds());
-        
+        EventBroker.GameOver += PlayerRespawn;        
     }
     /* void OnTriggerEnter2D(Collider2D other)
      {
@@ -55,9 +55,11 @@ public class Key : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" || other.gameObject.tag=="notPlayer")
         {
             //Debug.Log("entered");
+            //gameObject.SetActive(false);
+            child.intensity = 0;
             GetComponent<Renderer>().enabled = false;
             transform.GetChild(0).GetComponent<AudioSource>().Stop();
             what = false;
@@ -66,22 +68,6 @@ public class Key : MonoBehaviour
         }
         
     }
-    /*  void Update()
-      {
-          if (!what)
-          {
-              foreach (GameObject l in lights)
-              {
-                  l.gameObject.SetActive(false);
-                //  l.transform.GetChild(0).gameObject.SetActive(false);
-              //child=l.transform.GetChild(0).gameobject;
-              //child.intensity = 0;
-              //itslight.intensity = intensity;
-              //GetComponent<Renderer>().enabled = false;
-          } 
-          }
-      }
-    */
     IEnumerator DoEveryFelanSeconds()
     {
         while (true)

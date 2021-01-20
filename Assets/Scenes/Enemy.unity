@@ -1060,6 +1060,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161754221}
   m_CullTransparentMesh: 0
+--- !u!1 &1284787764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5004750736373693275, guid: 7f6b79e691711b94286d304d67721dd4,
+    type: 3}
+  m_PrefabInstance: {fileID: 5004750735364814247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1284787766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284787764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e65eb02eb445644eabb29bdf9aca384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 1284787769}
+  time: 0.1
+  shouldGetBigger: 1
+--- !u!114 &1284787769 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5004750736373693094, guid: 7f6b79e691711b94286d304d67721dd4,
+    type: 3}
+  m_PrefabInstance: {fileID: 5004750735364814247}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284787764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1289105860
 GameObject:
   m_ObjectHideFlags: 0
@@ -3255,7 +3288,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parent Circle Light Green Variable
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5004750736373693095, guid: 7f6b79e691711b94286d304d67721dd4,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.6
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5004750736373693273, guid: 7f6b79e691711b94286d304d67721dd4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7f6b79e691711b94286d304d67721dd4, type: 3}
 --- !u!1001 &5131976640113511752
 PrefabInstance:
@@ -3600,6 +3639,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2240796065828455277, guid: 7fe4ff19d1a745145b8bd8dba41c8e65,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 5899800565326929742, guid: 7fe4ff19d1a745145b8bd8dba41c8e65,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4113,6 +4157,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8082281552899056862, guid: 4d7c12b4212b8a84f9f82277aaa0389c,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8082281552899056863, guid: 4d7c12b4212b8a84f9f82277aaa0389c,
         type: 3}
       propertyPath: canvasObject
