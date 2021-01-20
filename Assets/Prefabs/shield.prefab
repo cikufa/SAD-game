@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8913362785635658367}
   - component: {fileID: 5993109761518554123}
   - component: {fileID: 3484641346662388832}
+  - component: {fileID: 9125248660777449441}
   m_Layer: 0
   m_Name: shield
   m_TagString: shieldItem
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 4485300514341696304, guid: 32a8d737d1a88c94e945324a9cd1b5df,
     type: 3}
-  m_Color: {r: 0.12588999, g: 0.6509434, b: 0.26305193, a: 0.6}
+  m_Color: {r: 0.23734966, g: 0.5660378, b: 0.20558918, a: 0.6}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -174,7 +175,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0031261444, y: 0.00388515}
+  m_Offset: {x: 0.00459671, y: -0.003584981}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -185,7 +186,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.036190033, y: 0.04010701}
+  m_Size: {x: 0.10025787, y: 0.10772109}
   m_EdgeRadius: 0
 --- !u!82 &3484641346662388832
 AudioSource:
@@ -283,3 +284,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &9125248660777449441
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8913362785635658364}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0031938553, y: -0.0024590492}
+  serializedVersion: 2
+  m_Radius: 0.24297667

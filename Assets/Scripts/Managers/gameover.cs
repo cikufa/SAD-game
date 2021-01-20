@@ -6,13 +6,35 @@ public class gameover : MonoBehaviour
 {
     private GameObject player;
     float timeout=1.5f;
+    int blinkCounter = 0;
     //float startTime = 1000;
     private void Start()
     {
         player = GameObject.FindWithTag("Player");
 
     }
-  
+    private void Update()
+    {
+        if (player.tag == "notPlayer")
+        {
+            blinkCounter++;
+            if (blinkCounter >= 10)
+            {
+                player.GetComponent<Renderer>().enabled = false;
+            }
+            if (blinkCounter >= 20)
+            {
+                player.GetComponent<Renderer>().enabled = true;
+                blinkCounter = 0;
+            }
+        }
+        else
+        {
+            player.GetComponent<Renderer>().enabled = true;
+        }
+        
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         

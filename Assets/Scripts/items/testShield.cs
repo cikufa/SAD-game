@@ -19,11 +19,11 @@ public class testShield : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("skhsd");
+      
         if (other.gameObject.tag == "shieldItem")
         {
-            Debug.Log("shields on"); 
             shieldactive = true;
+            other.GetComponent<CircleCollider2D>().isTrigger = false;
             other.transform.position = transform.position;
             other.transform.parent = transform;
             SR.sortingLayerName = "ignore light";

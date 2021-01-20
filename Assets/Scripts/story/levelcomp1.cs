@@ -55,30 +55,20 @@ public class levelcomp1 : MonoBehaviour
         //char gets bigger
         if (charT.localScale.x < charScale.x & charT.localScale.y < charScale.y)
         {
-            charT.localScale += new Vector3(0.1f, 0.1f, 0);
+            charT.localScale += new Vector3(0.15f, 0.15f, 0);
 
         }
-        //else if (charT.localScale.x >= charScale.x & charT.localScale.y >= charScale.y)
-        //{
-        //holdBallAnimator.SetBool("hold", true);
-        //ball apears
-        //yellowBall.SetActive(true);
-        //ballAnimator.SetBool(true);
-        // nore ball kam ziad she how?
-        //dont enter again
-        //charT.localScale += new Vector3(10, 10 ,0);
-
-        //}
+      
         //light spreads
         if (light1.pointLightInnerRadius > 0.3)
         {
-            light1.pointLightInnerRadius -= 0.002f;
+            light1.pointLightInnerRadius -= 0.003f;
 
         }
         if (light1.pointLightOuterRadius > 0.4)
         {
-            light1.pointLightOuterRadius -= 0.006f;
-            light1.intensity += 0.0001f;
+            light1.pointLightOuterRadius -= 0.008f;
+            light1.intensity += 0.0002f;
 
         }
 
@@ -91,8 +81,8 @@ public class levelcomp1 : MonoBehaviour
         if (onetime == 1 & ballT.position.y > -1.5f)
         {
             colorLight1.SetActive(false);
-            ballT.position -= new Vector3(0, 0.004f, 0);
-            if (ballT.position.y <= -0.9f & onetime2 == 0)
+            ballT.position -= new Vector3(0, 0.007f, 0);
+            if (ballT.position.y <= 0.8f & onetime2 == 0)
             {
                 holdBallAnimator.SetBool("hold", true);
                 onetime2 = 1;
