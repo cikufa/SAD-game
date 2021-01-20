@@ -10,22 +10,25 @@ public class ResetFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        EventBroker.GameOver += ResetEnemyAndDoor;
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void ResetEnemyAndDoor()
     {
-        if (other.gameObject.tag == "Player")
-        {
 
-            door1.GetComponent<SpriteRenderer>().enabled = false;
-            door2.GetComponent<SpriteRenderer>().enabled = false;
-            door3.GetComponent<SpriteRenderer>().enabled = false;
-            FollowEnemy.SetActive(false);
-            FollowEnemy.GetComponent<Transform>().position = new Vector3(390, -78, 0);
-            door1.GetComponent<BoxCollider2D>().isTrigger = true;
-            door2.GetComponent<BoxCollider2D>().isTrigger = true;
-            door3.GetComponent<BoxCollider2D>().isTrigger = true;
-        }
+        door1.GetComponent<SpriteRenderer>().enabled = false;
+        door2.GetComponent<SpriteRenderer>().enabled = false;
+        door3.GetComponent<SpriteRenderer>().enabled = false;
+        FollowEnemy.SetActive(false);
+        FollowEnemy.GetComponent<Transform>().position = new Vector3(390, -78, 0);
+        door1.GetComponent<BoxCollider2D>().isTrigger = true;
+        door2.GetComponent<BoxCollider2D>().isTrigger = true;
+        door3.GetComponent<BoxCollider2D>().isTrigger = true;
+    }
+
+
+    private void OnDestroy()
+    {
+        EventBroker.GameOver -= ResetEnemyAndDoor;
     }
 }
