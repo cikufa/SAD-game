@@ -10,10 +10,9 @@ public class story : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("ufo1", 4);
 
-        //ufosound.PlayDelayed(4); //17.5 to 29
-        //ufocolorsound.PlayDelayed(15);
+        ufosound.PlayDelayed(4); //17.5 to 29
+        ufocolorsound.PlayDelayed(15); //29 to 38
 
     }
 
@@ -22,17 +21,5 @@ public class story : MonoBehaviour
     {
         
     }
-    void ufo1()
-    {
-
-        ufosound.Play();
-        Invoke("ufo2", 11);
-
-    }
-    void ufo2()
-    {
-
-        ufocolorsound.Play();
-        
-    }
+    
 }
