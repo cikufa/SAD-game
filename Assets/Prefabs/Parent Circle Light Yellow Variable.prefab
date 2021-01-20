@@ -134,7 +134,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 1.7
-  m_PointLightOuterRadius: 3.6
+  m_PointLightOuterRadius: 3
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -188,10 +188,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 8082281552899056832}
-  upLimit: 5
-  downLimit: 2
-  outerPlus: 0.1
-  colliderPlus: 0.04
   time: 0.1
   shouldGetBigger: 1
 --- !u!1 &8082281554355139558

@@ -94,7 +94,7 @@ Animator:
   m_GameObject: {fileID: 5899800565326929746}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 94b702152bed022429d3e7072e31dcad, type: 2}
+  m_Controller: {fileID: 9100000, guid: a32476d0760c1e44d9e4830f76ddc0a4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 1.7
-  m_PointLightOuterRadius: 4
+  m_PointLightOuterRadius: 3
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -242,10 +242,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 5899800566751018665}
-  upLimit: 6
-  downLimit: 3.5
-  outerPlus: 0.1
-  colliderPlus: 0.02
   time: 0.1
   shouldGetBigger: 1
 --- !u!58 &2240796065828455277

@@ -7,11 +7,11 @@ public class SmoothVariableLight : MonoBehaviour
 {
 	public Light2D light;
 	private CircleCollider2D itsCollider;
-	public double upLimit = 5f;
-	public double downLimit = 2f;
+	private double upLimit = 5f;
+	private double downLimit = 3f;
 	//public float innerrPlus=0.1f;
-	public float outerPlus = 0.1f;
-	public float colliderPlus = 0.04f;
+	private float outerPlus = 0.1f;
+	private float colliderPlus = 0.04f;
 	public float time = 0.1f;
 	public bool shouldGetBigger = true;
 
