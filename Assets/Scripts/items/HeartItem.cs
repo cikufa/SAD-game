@@ -8,6 +8,10 @@ public class HeartItem : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            if(collision.GetComponent<PlayerController>().life >= 3)
+            {
+                return;
+            }
             collision.GetComponent<PlayerController>().life++;
             EventBroker.CallUpdateLifeInUi(collision.GetComponent<PlayerController>().life);
             //Destroy(this.gameObject);
