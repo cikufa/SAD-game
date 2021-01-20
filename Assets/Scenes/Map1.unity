@@ -976,6 +976,7 @@ MonoBehaviour:
   startToDrag: {fileID: 2044515100}
   arrow: {fileID: 2073600111}
   avoid: {fileID: 1411231933}
+  EndTutorialAfterThis: 0
 --- !u!1 &219353767 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3641314227472992437, guid: 72abef278b605d14090542ac42d04b44,
@@ -30909,6 +30910,7 @@ MonoBehaviour:
   startToDrag: {fileID: 2044515100}
   arrow: {fileID: 1416338367}
   avoid: {fileID: 97905620}
+  EndTutorialAfterThis: 0
 --- !u!1001 &527875412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33014,6 +33016,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 913658207}
+  - component: {fileID: 913658208}
   m_Layer: 0
   m_Name: tutorial
   m_TagString: Untagged
@@ -33040,6 +33043,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &913658208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913658206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82bc4a4c52cf3294c8bd4b6550274bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &914030811 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1485385499322376117, guid: 0de015ed28a65ad47931b901bf580249,
@@ -37271,6 +37286,7 @@ MonoBehaviour:
   startToDrag: {fileID: 2044515100}
   arrow: {fileID: 307975136}
   avoid: {fileID: 1411231933}
+  EndTutorialAfterThis: 1
 --- !u!1 &1728632056
 GameObject:
   m_ObjectHideFlags: 0
@@ -46546,6 +46562,7 @@ MonoBehaviour:
   startToDrag: {fileID: 2044515100}
   arrow: {fileID: 582723956}
   avoid: {fileID: 97905620}
+  EndTutorialAfterThis: 0
 --- !u!4 &1986202001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3825865425065032709, guid: fdf36c14d97c00f4698466761736cf5b,

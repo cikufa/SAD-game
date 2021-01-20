@@ -503,6 +503,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 7993065181042964515}
   win: {fileID: 6035862592901103665}
+  joystick: {fileID: 7656567121685970518}
+  brake: {fileID: 2457074139430638372}
 --- !u!1 &6808917807164490230
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,6 +995,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8202931281770151668, guid: 3d68684e569176e4191210a3e852861b,
+        type: 3}
+      propertyPath: brake
+      value: 
+      objectReference: {fileID: 2457074139430638372}
+    - target: {fileID: 8202931281770151668, guid: 3d68684e569176e4191210a3e852861b,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 7656567121685970518}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d68684e569176e4191210a3e852861b, type: 3}
 --- !u!224 &8292778678928895288 stripped
@@ -1671,6 +1683,12 @@ PrefabInstance:
 --- !u!224 &7656567121685970519 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3881087803549984436, guid: ec536a7718376554185e4a856d5ae230,
+    type: 3}
+  m_PrefabInstance: {fileID: 6889931219206953187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7656567121685970518 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3881087803549984437, guid: ec536a7718376554185e4a856d5ae230,
     type: 3}
   m_PrefabInstance: {fileID: 6889931219206953187}
   m_PrefabAsset: {fileID: 0}

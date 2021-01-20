@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Restart : MonoBehaviour
 {
     public GameObject gameOverPanel;
+    public GameObject joystick;
+    public GameObject brake;
 
     public void OnClickRestartLevel()
     {
@@ -21,5 +23,7 @@ public class Restart : MonoBehaviour
         //GameManager.Instance.TogglePause();
         EventBroker.CallRetryLevel();
         gameOverPanel.SetActive(false);
+        joystick.SetActive(true);
+        brake.SetActive(true);
     }
 }
