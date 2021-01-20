@@ -6,6 +6,8 @@ public class MainCanvasManager : MonoBehaviour
 {
     public GameObject gameOver;
     public GameObject win;
+    public GameObject joystick;
+    public GameObject brake;
 
     private void Start()
     {
@@ -16,6 +18,8 @@ public class MainCanvasManager : MonoBehaviour
     void GameOver()
     {
         gameOver.SetActive(true);
+        joystick.SetActive(false);
+        brake.SetActive(false);
     }
 
     //void Win()

@@ -21,6 +21,9 @@ public class tutorial : MonoBehaviour
      public GameObject arrow;
     public GameObject avoid;
 
+    [Space]
+    public bool EndTutorialAfterThis = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -82,7 +85,13 @@ public class tutorial : MonoBehaviour
         Destroy(tutLight);
         arrow.SetActive(false);
         avoid.SetActive(false);
-       
+
+        if (EndTutorialAfterThis)
+        {
+            PlayerPrefs.SetString("TutorialSeen", "true");
+            transform.parent.gameObject.SetActive(false);
+        }
+
     }
 
 
