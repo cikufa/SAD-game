@@ -117,11 +117,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95778b57be8b9894fb7187e8dddc517e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lights:
-  - {fileID: 0}
-  - {fileID: 0}
+  lights: []
   itself: {fileID: 2465954895628742248}
-  time: 5
+  child: {fileID: 6914913458607237188}
+  time1: 2
+  time2: 5
 --- !u!61 &7440713873985617140
 BoxCollider2D:
   m_ObjectHideFlags: 0
