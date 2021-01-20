@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -965,7 +965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bglight: {fileID: 1250126128}
-  input: {fileID: 5108518142443729474}
+  input: {fileID: 535038984}
   enemytut: {fileID: 1297684635}
   tutLight: {fileID: 420341910}
   nearlamp1: {fileID: 371966741}
@@ -30899,7 +30899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bglight: {fileID: 1250126128}
-  input: {fileID: 5108518142443729474}
+  input: {fileID: 535038984}
   enemytut: {fileID: 1304514225}
   tutLight: {fileID: 929982421}
   nearlamp1: {fileID: 371966741}
@@ -30980,6 +30980,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8fb79d7146a4034b89b01bff62663c1, type: 3}
+--- !u!1 &535038984 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7656567121685970518, guid: 397d9605a307dbf44ab557bdf3094a0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5108518142443729473}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &546594266 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3641314227472992428, guid: 72abef278b605d14090542ac42d04b44,
@@ -37269,7 +37275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bglight: {fileID: 1250126128}
-  input: {fileID: 5108518142443729474}
+  input: {fileID: 535038984}
   enemytut: {fileID: 771045501}
   tutLight: {fileID: 56584859}
   nearlamp1: {fileID: 1570143730}
@@ -46545,7 +46551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bglight: {fileID: 1250126128}
-  input: {fileID: 5108518142443729474}
+  input: {fileID: 535038984}
   enemytut: {fileID: 1238089450}
   tutLight: {fileID: 471200966}
   nearlamp1: {fileID: 407445226}
@@ -47615,12 +47621,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 397d9605a307dbf44ab557bdf3094a0e, type: 3}
---- !u!1 &5108518142443729474 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4826858278861894223, guid: 397d9605a307dbf44ab557bdf3094a0e,
-    type: 3}
-  m_PrefabInstance: {fileID: 5108518142443729473}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5938487936260535576
 PrefabInstance:
   m_ObjectHideFlags: 0
