@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 5004750736373693094}
   - component: {fileID: 5004750736373693095}
   - component: {fileID: 5004750736373693272}
-  - component: {fileID: 5004750736373693273}
+  - component: {fileID: 4982611053072712155}
   m_Layer: 0
   m_Name: Circle Light (1)
   m_TagString: Untagged
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8c1c8fdfd3a6e40bfc8b5cdbe57eef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5004750736373693273
+--- !u!114 &4982611053072712155
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -254,13 +254,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5004750736373693275}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80618879f583ea0408ade905002aaf39, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e65eb02eb445644eabb29bdf9aca384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 5004750736373693094}
-  upLimit: 10
-  downLimit: 5
-  outerPlus: 0.1
-  colliderPlus: 0.03
   time: 0.1
   shouldGetBigger: 1
