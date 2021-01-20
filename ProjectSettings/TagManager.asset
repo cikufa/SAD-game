@@ -9,6 +9,7 @@ TagManager:
   - shieldItem
   - FollowEnemy
   - notPlayer
+  - Joystick
   layers:
   - Default
   - TransparentFX

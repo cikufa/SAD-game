@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCam: {fileID: 0}
-  forceConstant: 5000
+  forceConstant: 2000
   forceCurve:
     serializedVersion: 2
     m_Curve:
@@ -147,6 +147,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   rotationSpeed: 50
+  variableJoystick: {fileID: 0}
+  brakeSpeed: 20
   life: 3
   hasLost: 0
 --- !u!95 &5592262705560993460
