@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 9101651249007630404}
   - component: {fileID: 9101651249007630405}
   - component: {fileID: 9101651249007630402}
+  - component: {fileID: 1794403917}
+  - component: {fileID: 2529648106435190324}
   m_Layer: 0
   m_Name: Parent Circle Light Yellow
   m_TagString: Untagged
@@ -51,7 +53,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -69,11 +71,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1131687449
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 6abe63dab72abfc4a80923c92d01726a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7264151, g: 0.6955767, b: 0.6955767, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -93,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 9101651249007630403}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3de2e99aea7903f47ac6be7fb794838a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7db3c6fbf26302743ba7690ee84dde66, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -102,6 +104,86 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1794403917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9101651249007630403}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.58
+  m_Color: {r: 0.29036134, g: 0.77083534, b: 0.8207547, a: 1}
+  m_Intensity: 1.5
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 69376b9a
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 7
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
+--- !u!60 &2529648106435190324
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9101651249007630403}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.26999998, y: -0.16}
+      - {x: 0.26999998, y: -0.07}
+      - {x: 0.17, y: 0.08}
+      - {x: 0.08, y: 0.12}
+      - {x: 0.14, y: 0.32}
+      - {x: -0.17, y: 0.32}
+      - {x: -0.17, y: 0.26}
+      - {x: -0.14999999, y: 0.16}
+      - {x: -0.13, y: 0.08}
+      - {x: -0.29999998, y: -0.01}
+      - {x: -0.31, y: -0.06}
+      - {x: -0.31, y: -0.17999999}
+      - {x: -0.17, y: -0.32}
+      - {x: 0.13, y: -0.32}
 --- !u!1 &9101651249516169983
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,8 +231,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 0.9786186, g: 1, b: 0, a: 1}
+  m_FalloffIntensity: 0.44
+  m_Color: {r: 0.9254902, g: 0.76862746, b: 0.16078432, a: 1}
   m_Intensity: 3
   m_LightVolumeOpacity: 0.1
   m_ApplyToSortingLayers: 00000000
@@ -163,7 +245,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 1.5772992
-  m_PointLightOuterRadius: 3
+  m_PointLightOuterRadius: 3.2
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -189,9 +271,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000015718526, y: 0}
+  m_Offset: {x: -0.006126099, y: 0.0025244248}
   serializedVersion: 2
-  m_Radius: 0.51752955
+  m_Radius: 0.5385471
 --- !u!114 &9101651249516169953
 MonoBehaviour:
   m_ObjectHideFlags: 0

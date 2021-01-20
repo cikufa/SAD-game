@@ -130,8 +130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d4ef61486eb22489350715143bb2d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasObject: {fileID: 0}
-  gameStatus: {fileID: 0}
 --- !u!60 &2017374662764229145
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -243,7 +241,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 912c613d7df3ee1418aef3bd73478d5b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6784314, g: 0.41960785, b: 0.41960785, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -284,8 +282,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d4ef61486eb22489350715143bb2d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasObject: {fileID: 0}
-  gameStatus: {fileID: 0}
 --- !u!60 &2017374662812212009
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -389,7 +385,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0.02745098, b: 0, a: 1}
   m_Intensity: 2.5
   m_LightVolumeOpacity: 0.103
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 0000000069376b9a
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -452,5 +448,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8c1c8fdfd3a6e40bfc8b5cdbe57eef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasObject: {fileID: 0}
-  gameStatus: {fileID: 0}

@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 5899800565326929746}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 20.8, y: -17.9, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 2.5}
+  m_LocalScale: {x: 5, y: 5, z: 2.5}
   m_Children:
   - {fileID: 5899800566751018660}
   m_Father: {fileID: 0}
@@ -70,11 +70,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1022518727
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 2e6eb8816626b7143a820e7c24aaa264, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6792453, g: 0.41972235, b: 0.41972235, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -94,7 +94,7 @@ Animator:
   m_GameObject: {fileID: 5899800565326929746}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 94b702152bed022429d3e7072e31dcad, type: 2}
+  m_Controller: {fileID: 9100000, guid: a32476d0760c1e44d9e4830f76ddc0a4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -152,11 +152,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5899800566751018660}
   - component: {fileID: 5899800566751018665}
-  - component: {fileID: 5899800566751018663}
   - component: {fileID: 5899800566751018662}
-  - component: {fileID: 5899800566751018661}
+  - component: {fileID: 7007764824826854896}
+  - component: {fileID: 2240796065828455277}
   m_Layer: 0
-  m_Name: Circle Light
+  m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,7 +169,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5899800566751018664}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0112, y: 1.3398399, z: 1.0112}
   m_Children: []
@@ -190,11 +190,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.02745098, b: 0, a: 1}
+  m_FalloffIntensity: 0.2
+  m_Color: {r: 0.509434, g: 0, b: 0, a: 1}
   m_Intensity: 3
   m_LightVolumeOpacity: 0.1
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 0000000069376b9a
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 1
@@ -203,7 +203,7 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 1.5772992
+  m_PointLightInnerRadius: 1.7
   m_PointLightOuterRadius: 3
   m_PointLightDistance: 3
   m_PointLightQuality: 1
@@ -213,26 +213,10 @@ MonoBehaviour:
   m_ShapeLightFalloffSize: 0.5
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
---- !u!58 &5899800566751018663
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5899800566751018664}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.00000015718526, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.51752955
+  - {x: -0.06515668, y: 0.12372124, z: 0}
+  - {x: 0.09518547, y: 0.12372124, z: 0}
+  - {x: 0.08257136, y: 0.5734125, z: 0}
+  - {x: -0.069361545, y: 0.57341284, z: 0}
 --- !u!114 &5899800566751018662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8c1c8fdfd3a6e40bfc8b5cdbe57eef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5899800566751018661
+--- !u!114 &7007764824826854896
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -258,9 +242,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 5899800566751018665}
-  upLimit: 5
-  downLimit: 2
-  outerPlus: 0.1
-  colliderPlus: 0.04
   time: 0.1
   shouldGetBigger: 1
+--- !u!58 &2240796065828455277
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5899800566751018664}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.0024906686}
+  serializedVersion: 2
+  m_Radius: 0.47202668
