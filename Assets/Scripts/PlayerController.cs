@@ -69,7 +69,8 @@ public class PlayerController : MonoBehaviour
         if(!hasLost && brakeNow)
         {
              rb.velocity = Vector2.MoveTowards(rb.velocity, Vector2.zero, Time.deltaTime * brakeSpeed);
-            if(rb.velocity.magnitude == 0)
+             rb.angularVelocity = Mathf.MoveTowards(rb.angularVelocity, 0, Time.deltaTime * brakeSpeed);
+            if(rb.velocity.magnitude == 0 && rb.angularVelocity == 0)
             {
                 brakeNow = false;
             }

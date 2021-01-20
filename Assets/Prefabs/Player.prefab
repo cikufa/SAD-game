@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCam: {fileID: 0}
-  forceConstant: 2000
+  forceConstant: 1500
   forceCurve:
     serializedVersion: 2
     m_Curve:
