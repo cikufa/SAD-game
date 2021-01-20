@@ -30,6 +30,9 @@ public class ItemSFX : MonoBehaviour
 
     void PlayerRespawned()
     {
-        source.Stop();
+        if (source)
+        {
+            source.Stop();
+        }
     }
 }

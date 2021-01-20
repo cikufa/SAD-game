@@ -6,50 +6,50 @@ public class GetInput : MonoBehaviour
     PlayerController player; 
 
 
-    private void Start()
-    {
-        player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+    //private void Start()
+    //{
+    //    player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
 
-        RectTransform rt = GetComponent<RectTransform>();
-        Vector3[] v = new Vector3[4];
-        rt.GetWorldCorners(v);
-        player.SetMaxDistance(v[1], v[3]);
+    //    RectTransform rt = GetComponent<RectTransform>();
+    //    Vector3[] v = new Vector3[4];
+    //    rt.GetWorldCorners(v);
+    //    player.SetMaxDistance(v[1], v[3]);
 
-        EventTrigger trigger = GetComponent<EventTrigger>();
-        EventTrigger.Entry entry = new EventTrigger.Entry();
-        entry.eventID = EventTriggerType.PointerDown;
-        entry.callback.AddListener((data) => { OnPointerDown((PointerEventData)data); });
-        trigger.triggers.Add(entry);
-        EventTrigger.Entry entry2 = new EventTrigger.Entry();
-        entry2.eventID = EventTriggerType.PointerUp;
-        entry2.callback.AddListener((data) => { OnPointerUp((PointerEventData)data); });
-        trigger.triggers.Add(entry2);
+    //    EventTrigger trigger = GetComponent<EventTrigger>();
+    //    EventTrigger.Entry entry = new EventTrigger.Entry();
+    //    entry.eventID = EventTriggerType.PointerDown;
+    //    entry.callback.AddListener((data) => { OnPointerDown((PointerEventData)data); });
+    //    trigger.triggers.Add(entry);
+    //    EventTrigger.Entry entry2 = new EventTrigger.Entry();
+    //    entry2.eventID = EventTriggerType.PointerUp;
+    //    entry2.callback.AddListener((data) => { OnPointerUp((PointerEventData)data); });
+    //    trigger.triggers.Add(entry2);
 
-        EventTrigger.Entry entry3 = new EventTrigger.Entry();
-        entry3.eventID = EventTriggerType.Drag;
-        entry3.callback.AddListener((data) => { OnDrag((PointerEventData)data); });
-        trigger.triggers.Add(entry3);
-    }
+    //    EventTrigger.Entry entry3 = new EventTrigger.Entry();
+    //    entry3.eventID = EventTriggerType.Drag;
+    //    entry3.callback.AddListener((data) => { OnDrag((PointerEventData)data); });
+    //    trigger.triggers.Add(entry3);
+    //}
 
-    void OnPointerDown(PointerEventData data)
-    {
-        //Debug.Log("PointerDown");
+    //void OnPointerDown(PointerEventData data)
+    //{
+    //    //Debug.Log("PointerDown");
 
-        player.StartAim(data.position);
-    }
+    //    player.StartAim(data.position);
+    //}
     
 
-    void OnPointerUp(PointerEventData data)
-    {
-        //Debug.Log("PointerUp");
+    //void OnPointerUp(PointerEventData data)
+    //{
+    //    //Debug.Log("PointerUp");
 
-        player.EndAim(data.position);
-    }
+    //    player.EndAim(data.position);
+    //}
 
-    void OnDrag(PointerEventData data)
-    {
-        //Debug.Log("isDragging");
+    //void OnDrag(PointerEventData data)
+    //{
+    //    //Debug.Log("isDragging");
 
-        player.DraggingStarted();
-    }
+    //    player.DraggingStarted();
+    //}
 }

@@ -5,6 +5,8 @@ public class EventBroker
     public static Action GameOver, RetryLevel,explode;
     public static Action<int> updateLifeInUi;
 
+    public static Action startAim, endAim;
+
     public static void CallGameOver()
     {
         GameOver?.Invoke();
@@ -28,6 +30,16 @@ public class EventBroker
     public static void CallExplode()
     {
         explode?.Invoke();
+    }
+
+    public static void CallStartAim()
+    {
+        startAim?.Invoke();
+    }
+
+    public static void CallendAim()
+    {
+        endAim?.Invoke();
     }
 
 }

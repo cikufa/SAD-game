@@ -11,7 +11,7 @@ public class SmoothVariableLight : MonoBehaviour
 	private double downLimit = 3f;
 	//public float innerrPlus=0.1f;
 	private float outerPlus = 0.1f;
-	private float colliderPlus = 0.04f;
+	private float colliderPlus = 0.012f;
 	public float time = 0.1f;
 	public bool shouldGetBigger = true;
 
