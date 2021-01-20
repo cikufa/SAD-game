@@ -63,7 +63,11 @@ public class Key : MonoBehaviour
             GetComponent<Renderer>().enabled = false;
             transform.GetChild(0).GetComponent<AudioSource>().Stop();
             what = false;
-            Invoke("end", endTime);
+            foreach (GameObject l in lights)
+            {
+                l.gameObject.SetActive(false);
+            }
+                Invoke("end", endTime);
             StopCoroutine(DoEveryFelanSeconds());
         }
         
