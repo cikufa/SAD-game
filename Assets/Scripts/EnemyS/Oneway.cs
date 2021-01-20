@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 
 
@@ -12,6 +13,10 @@ public class Oneway : MonoBehaviour
     public GameObject door2, door3;
 
     public GameObject FollowEnemy;
+
+    public CinemachineVirtualCamera cinemachine;
+
+    CinemachineTransposer cineTransposer;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +27,7 @@ public class Oneway : MonoBehaviour
         box1 = this.GetComponent<BoxCollider2D>();
         box2 = door2.GetComponent<BoxCollider2D>();
         box3 = door3.GetComponent<BoxCollider2D>();
+        cineTransposer = cinemachine.GetCinemachineComponent<CinemachineTransposer>();
     }
 
     // Update is called once per frame
@@ -44,6 +50,16 @@ public class Oneway : MonoBehaviour
             box1.isTrigger = false;
             box2.isTrigger = false;
             box3.isTrigger = false;
+            // = Vector3.Lerp(cineTransposer.m_FollowOffset, FollowEnemy.transform.position, .02f);
+            cinemachine.m_Follow = FollowEnemy.transform;
+            cinemachine.m_Lens.OrthographicSize = 5;
+            Invoke("wakeup", Time.deltaTime * 5f);
         }
     }
+    public void wakeup()
+    {
+        FollowEnemy.GetComponent<Transform>().Find("Parent Circle Light Green").GetComponent<Animator>().SetBool("wake", true);
+    }
+
+
 }
