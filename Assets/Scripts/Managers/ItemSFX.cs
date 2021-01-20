@@ -8,6 +8,7 @@ public class ItemSFX : MonoBehaviour
 
     private void Start()
     {
+        EventBroker.GameOver += PlayerRespawned;
         source = GetComponent<AudioSource>();   
     }
 
@@ -25,5 +26,10 @@ public class ItemSFX : MonoBehaviour
         {
             source.Stop();
         }
+    }
+
+    void PlayerRespawned()
+    {
+        source.Stop();
     }
 }
