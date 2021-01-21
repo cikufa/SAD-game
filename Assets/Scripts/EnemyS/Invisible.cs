@@ -6,7 +6,7 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class Invisible : MonoBehaviour
 {
-
+    AudioSource seda;
     public Light2D itslight;
     private GameObject player;
     float distance;
@@ -19,7 +19,12 @@ public class Invisible : MonoBehaviour
         //light = Light.Find("Circle Light");
         player = GameObject.FindWithTag("Player");
         animator = GetComponent<Animator>();
-        
+        seda = GetComponent<AudioSource>();
+
+    }
+    private void OnBecameVisible()
+    {
+        seda.Play();
     }
     void Update()
     {
@@ -27,21 +32,23 @@ public class Invisible : MonoBehaviour
         //float distance = Vector3.Distance(target.position,transform.position);
         if (distance < sight)
         {
+            //seda.Play();
+            //Debug.Log("soundcheck");
             GetComponent<Renderer>().enabled = true;
             animator.SetBool("appear", true);
-            GetComponent<AudioSource>().Play();
+            //GetComponent<AudioSource>().Play();
 
             if (itslight.intensity < intensity)
             {
                 itslight.intensity += 0.1f;
             }
             //itslight.intensity = intensity;
-           
      
         }
         else if (distance > sight)
         {
             animator.SetBool("appear", false);
+            //seda.Stop();
 
             if (itslight.intensity > 0)
             {
@@ -51,12 +58,6 @@ public class Invisible : MonoBehaviour
                     GetComponent<Renderer>().enabled = false;
                 }
             }
-            
-
-
-       
-            
-         
         }
     }
     float GetDist()
