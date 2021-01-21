@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1478,6 +1478,8 @@ MonoBehaviour:
   door3: {fileID: 1725951720}
   FollowEnemy: {fileID: 190343399}
   cinemachine: {fileID: 141058452}
+  joystick: {fileID: 1755803169}
+  brake: {fileID: 1755803168}
 --- !u!61 &168056365
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61813,6 +61815,8 @@ MonoBehaviour:
   door3: {fileID: 1725951720}
   FollowEnemy: {fileID: 190343399}
   cinemachine: {fileID: 141058452}
+  joystick: {fileID: 1755803169}
+  brake: {fileID: 1755803168}
 --- !u!61 &1137972198
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62003,6 +62007,8 @@ MonoBehaviour:
   l: {fileID: 6077072}
   parent: {fileID: 190343399}
   cinemachine: {fileID: 141058452}
+  joystick: {fileID: 1755803169}
+  brake: {fileID: 1755803168}
 --- !u!95 &1163041401
 Animator:
   serializedVersion: 3
@@ -76420,6 +76426,8 @@ MonoBehaviour:
   door3: {fileID: 1137972196}
   FollowEnemy: {fileID: 190343399}
   cinemachine: {fileID: 141058452}
+  joystick: {fileID: 1755803169}
+  brake: {fileID: 1755803168}
 --- !u!61 &1725951723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -76636,6 +76644,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 397d9605a307dbf44ab557bdf3094a0e, type: 3}
+--- !u!1 &1755803168 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2457074139430638372, guid: 397d9605a307dbf44ab557bdf3094a0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1755803167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1755803169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7656567121685970518, guid: 397d9605a307dbf44ab557bdf3094a0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1755803167}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1763014310
 GameObject:
   m_ObjectHideFlags: 0

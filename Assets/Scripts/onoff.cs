@@ -14,6 +14,10 @@ public class onoff : MonoBehaviour
     public CinemachineVirtualCamera cinemachine;
     private GameObject player;
 
+    [Space]
+    public GameObject joystick;
+    public GameObject brake;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -44,5 +48,7 @@ public class onoff : MonoBehaviour
     {
         cinemachine.m_Follow = player.transform;
         cinemachine.m_Lens.OrthographicSize = 16;
+        joystick.SetActive(true);
+        brake.SetActive(true);
     }
 }

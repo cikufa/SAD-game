@@ -16,6 +16,10 @@ public class Oneway : MonoBehaviour
 
     public CinemachineVirtualCamera cinemachine;
 
+    [Space]
+    public GameObject joystick;
+    public GameObject brake;
+
     CinemachineTransposer cineTransposer;
     // Start is called before the first frame update
     void Start()
@@ -54,6 +58,9 @@ public class Oneway : MonoBehaviour
             cinemachine.m_Follow = FollowEnemy.transform;
             cinemachine.m_Lens.OrthographicSize = 5;
             Invoke("wakeup", Time.deltaTime * 5f);
+            joystick.SetActive(false);
+            brake.SetActive(false);
+
         }
     }
     public void wakeup()
